@@ -1,0 +1,6 @@
+pyboy
+smolagents
+openai
+numpy
+pillow
+opencv-python
