@@ -1,4 +1,4 @@
-Pokémon Red MCP Agent
+# Pokémon MCP Agent
 
 This project is a Pokémon Red agent built with Python, PyBoy, SmolAgents, and a locally hosted LLM using Qwen2.5-3B-Instruct.
 
