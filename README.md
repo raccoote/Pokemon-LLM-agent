@@ -1,64 +1,117 @@
-# Pokémon Red Autonomous AI Agent
+Pokémon Red: Agent LLM
 
-An autonomous AI agent that plays Pokémon Red using the PyBoy emulator and a local LLM via SmolAgents.
+This project is a Pokémon Red agent built with Python, PyBoy, SmolAgents, and a locally hosted LLM using Qwen2.5-3B-Instruct.
 
-## Architecture
+The architecture is inspired by MCP agents, where the language model interacts with pre-defined tools instead of directly controlling the environment. Rather than sending raw button presses frame-by-frame, the model operates as a high-level planner that selects goals and actions (e.g. open inventory).
 
-- **PyBoy Emulator**: Runs the game.
-- **RAM Extraction**: Python code reads game state directly from emulator memory.
-- **Deterministic Skills**: Python scripts for movement, battles, and recovery.
-- **SmolAgents**: Orchestrates high-level planning and tool use.
-- **LM Studio**: Hosts the local LLM API (OpenAI-compatible).
-- **Qwen2.5-3B-Instruct**: The brain of the agent.
+The model observes the current game state, selects objectives, and calls structured tools that will execute deterministic actions inside the emulator.
 
-## Prerequisites
+<img width="1074" height="911" alt="image" src="https://github.com/user-attachments/assets/e78c487f-ee2e-449f-a6ea-56f84cca875b" />
 
-1.  **Python 3.10+**
-2.  **LM Studio**
-3.  **Pokémon Red ROM**: Place `pokemon_red.gb` in the project root.
+---
 
-## Setup Instructions
+<img width="1074" height="672" alt="image" src="https://github.com/user-attachments/assets/6c8ab02d-c34c-496f-aa68-c7956f68ce6f" />
 
-### 1. LM Studio Setup
+---
 
-1.  Download and install [LM Studio](https://lmstudio.ai/).
-2.  Search for and download the **Qwen2.5-3B-Instruct** model.
-3.  Go to the **Local Server** tab (the icon that looks like a double arrow/server).
-4.  Select the Qwen2.5 model.
-5.  Ensure the port is set to `1234`.
-6.  Click **Start Server**. The API will be available at `http://localhost:1234/v1`.
+# Workflow
 
-### 2. Installation
+```text
+PyBoy Emulator 
+    ↓
+RAM extraction 
+    ↓
+Structured game state
+    ↓
+SmolAgents + Qwen2.5-3b
+    ↓
+Tool calls
+    ↓
+Python execution layer
+    ↓
+PyBoy button inputs
+```
 
-Clone the repository and install the dependencies:
+The game (Pokemon Red) runs through the PyBoy Game Boy emulator (https://github.com/baekalfen/pyboy).
+
+Python reads important values (such as pokemon hp, states, coordinates) directly from emulator memory (using this fan-made ram map -> https://datacrystal.tcrf.net/wiki/Pok%C3%A9mon_Red_and_Blue/RAM_map). That data gets passed into the LLM through SmolAgents library by Hugging Face.
+
+The model then decides what to do next using any of the tools available:
+
+* heal pokemon
+* retrieve Gamestate (battle, dialogue, cutscene)
+* navigate somewhere
+* interact with menus
+
+The actual execution is handled directly by Python code. 
+
+For example:
+```
+def navigate_to(manager, target_x, target_y):
+    """
+    Navigation skill using Manhattan movement.
+    """
+    curr_x, curr_y = manager.memory.get_player_pos()
+    
+    if curr_x < target_x:
+        manager.controls.move("right")
+    elif curr_x > target_x:
+        manager.controls.move("left")
+    elif curr_y < target_y:
+        manager.controls.move("down")
+    elif curr_y > target_y:
+        manager.controls.move("up")
+    
+    return True
+```
+
+---
+
+# Setup Guide
+
+## 1. Install Python dependencies
+
+Inside the project folder:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Note: This project does NOT require `torch` or `transformers` as it connects to a local API.
+## 2. Install LM Studio 
 
-### 3. Running the Agent
+(I used LM Studio, but you can set up your LLM model in different ways.)
 
-Ensure LM Studio local server is running, then execute:
+Download and install LM Studio:
+
+https://lmstudio.ai/
+
+Inside LM Studio, :
+
+
+1. Download the model you want:
+```text
+Qwen2.5-3B-Instruct
+```
+2. Open the “Developer” tab
+3. Load the model
+4. Start the local server
+
+The API runs by default at the URL:
+
+```text
+http://localhost:1234/v1
+```
+
+## 3. Add the ROM
+
+Place your Pokémon Red ROM in the project root:
+
+```text
+pokemon_red.gb
+```
+
+## 4. Run the agent
 
 ```bash
 python main.py
 ```
-
-## How It Works
-
-- The agent reads the game state (coordinates, party status, map ID) from RAM.
-- It sends this state, along with recent history and logic notes, to the LLM.
-- The LLM decides on a high-level goal (explore, navigate, battle, etc.) and can call tools to interact with the game.
-- Python handles the low-level execution and timing to ensure reliability.
-- If the agent gets stuck in a loop, it triggers a recovery mode to move to a new area.
-
-## Project Structure
-
-- `main.py`: The main execution loop.
-- `agent/`: Contains the `Planner`, `MemoryStore`, and system prompts.
-- `tools/`: smolagents-compatible tools for game interaction.
-- `skills/`: Deterministic Python logic for navigation and battles.
-- `emulator/`: Manages the PyBoy instance and RAM extraction.
-- `config.py`: Configuration settings.
