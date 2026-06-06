@@ -18,7 +18,7 @@ SOUND_ENABLED = True
 WINDOW_SCALE = 3
 
 # LLM Settings
-LLM_MODEL = "qwen2.5-3b-instruct"
+LLM_MODEL = "qwen3.5-2b"
 LM_STUDIO_BASE_URL = "http://localhost:1234/v1"
 
 # RAM Addresses (Pokemon Red US)

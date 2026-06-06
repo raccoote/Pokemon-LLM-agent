@@ -115,3 +115,7 @@ pokemon_red.gb
 ```bash
 python main.py
 ```
+
+# References 
+Pokemon RED Rom and RAM map -> https://datacrystal.tcrf.net/wiki/Pok%C3%A9mon_Red_and_Blue
+fellow projects -> https://github.com/papercomputeco/pokemon and https://github.com/sidmohan0/tesserack

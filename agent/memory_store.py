@@ -31,4 +31,4 @@ class MemoryStore:
         return False
 
     def get_history_summary(self):
-        return list(self.history)
+        return list(self.history)[-1:] if self.history else []

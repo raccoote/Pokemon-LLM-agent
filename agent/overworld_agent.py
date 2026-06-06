@@ -25,6 +25,7 @@ class OverworldAgent:
             
             action = self.planner.get_next_goal(
                 state=current_state,
+                phase=state.get("phase", "unknown"),
                 history=history,
                 logic_note=logic_note
             )

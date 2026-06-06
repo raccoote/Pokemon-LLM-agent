@@ -36,23 +36,6 @@ def _state():
 # BASIC ACTION TOOLS
 # =========================
 
-@tool
-def get_game_state() -> str:
-    """
-    Returns a string representation of the current emulator game state.
-
-    Use this to:
-    - Understand current position, menus, or dialogue
-    - Debug unexpected behavior
-    - Decide next action
-
-    Returns:
-        str: Serialized game state or error message if emulator is missing.
-    """
-    if not manager:
-        return "Error: no emulator"
-    return str(_state())
-
 
 @tool
 def move_up() -> str:
