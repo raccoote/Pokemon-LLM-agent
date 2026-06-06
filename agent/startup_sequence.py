@@ -7,40 +7,19 @@ logger = logging.getLogger(__name__)
 
 
 def handle_startup(manager, phase, dialogue_manager):
-
     logger.info(f"Startup Handler: Processing {phase}")
-
-    # ---------------------------------------------------------
-    # TITLE SCREEN
-    # ---------------------------------------------------------
 
     if phase == GamePhase.TITLE:
 
-        logger.info("Title screen -> Start")
-
         manager.controls.press_start()
-
         time.sleep(1.0)
-
         return
-
-    # ---------------------------------------------------------
-    # MENU
-    # ---------------------------------------------------------
 
     if phase == GamePhase.MENU:
 
-        logger.info("Menu -> A")
-
         manager.controls.press_a()
-
         time.sleep(0.8)
-
         return
-
-    # ---------------------------------------------------------
-    # INTRO / OAK DIALOGUE
-    # ---------------------------------------------------------
 
     if phase in [
         GamePhase.INTRO,
@@ -49,14 +28,8 @@ def handle_startup(manager, phase, dialogue_manager):
     ]:
 
         logger.info("Dialogue progression -> A")
-
         manager.controls.press_a()
-
         time.sleep(0.5)
-
         return
 
-    # ---------------------------------------------------------
-    # FALLBACK
-    # ---------------------------------------------------------
     time.sleep(0.5)

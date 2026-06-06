@@ -1,15 +1,12 @@
 import time
 import logging
+from typing import Optional
 from pyboy.utils import WindowEvent
 
 logger = logging.getLogger(__name__)
 
-from typing import Optional
-
 class InputManager:
-    """
-    Centralized input management with rate limiting, cooldowns, and edge-triggering.
-    """
+    """Centralized input management with rate limiting, cooldowns, and edge-triggering."""
     def __init__(self, manager):
         self.manager = manager
         self.last_press_time = {} # button -> frame_count

@@ -1,5 +1,6 @@
 from smolagents import tool
 import logging
+from agent.state_detector import StateDetector
 
 logger = logging.getLogger(__name__)
 
@@ -30,11 +31,6 @@ def _state():
         Current game state object or None if manager is not set.
     """
     return manager.memory.get_game_state() if manager else None
-
-
-# =========================
-# BASIC ACTION TOOLS
-# =========================
 
 
 @tool
@@ -192,13 +188,6 @@ def explore_randomly_tool():
     from skills.navigation import explore_randomly
     explore_randomly(manager)
     return "explore"
-
-
-# =========================
-# PHASE DETECTION
-# =========================
-
-from agent.state_detector import StateDetector
 
 
 def _detector():
@@ -412,14 +401,13 @@ def take_screenshot() -> str:
     if not manager:
         return "Error: no emulator"
 
-    if hasattr(manager, "render") or hasattr(manager, "screenshot"):
-        if hasattr(manager, "screenshot"):
-            return manager.screenshot()
-
-        if hasattr(manager, "render"):
-            return manager.render()
+    if hasattr(manager, "capture_screen"):
+        path = "logs/latest_frame.png"
+        manager.capture_screen(path)
+        return f"Screenshot saved to {path}"
 
     return "Screenshot not available"
+
 @tool
 def debug_state() -> str:
     """

@@ -1,5 +1,4 @@
 import logging
-import time
 from enum import Enum, auto
 import config
 from agent.npc_interaction_tracker import NPCInteractionTracker

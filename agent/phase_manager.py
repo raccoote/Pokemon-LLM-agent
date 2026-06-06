@@ -29,10 +29,6 @@ class PhaseManager:
         self.last_state_hash = None
         self._iter = 0
 
-    # =========================================================
-    # MAIN LOOP
-    # =========================================================
-
     def run_iteration(self):
 
         self.manager.controls.update_frame_count()
@@ -50,12 +46,7 @@ class PhaseManager:
             self.stuck_counter = 0
             self.last_state_hash = None
 
-        # -----------------------------------------------------
-        # UPDATE DIALOGUE MANAGER
-        # -----------------------------------------------------
-
         ram_state = self.manager.memory.get_game_state()
-
         self.dialogue_manager.update(ram_state)
 
         # -----------------------------------------------------
@@ -68,10 +59,6 @@ class PhaseManager:
                 return
         else:
             self.stuck_counter = 0
-
-        # -----------------------------------------------------
-        # STARTUP / INTRO
-        # -----------------------------------------------------
 
         if phase in [
             GamePhase.BOOT,
@@ -88,20 +75,11 @@ class PhaseManager:
                 phase,
                 self.dialogue_manager
             )
-
             return
-
-        # -----------------------------------------------------
-        # BATTLE
-        # -----------------------------------------------------
 
         if phase == GamePhase.BATTLE:
             handle_battle_phase(self.manager)
             return
-
-        # -----------------------------------------------------
-        # OVERWORLD
-        # -----------------------------------------------------
 
         if phase == GamePhase.OVERWORLD or phase == GamePhase.BEDROOM:
 
@@ -119,10 +97,6 @@ class PhaseManager:
 
         logger.warning(f"Unknown phase: {phase}")
 
-    # =========================================================
-    # RAM DIAGNOSTICS
-    # =========================================================
-
     def _log_ram_state(self):
         """Log key RAM values occasionally."""
         try:
@@ -137,10 +111,6 @@ class PhaseManager:
                 )
         except Exception as e:
             logger.error(f"Failed to log RAM state: {e}")
-
-    # =========================================================
-    # STUCK DETECTION
-    # =========================================================
 
     def _is_stuck(self):
 
@@ -185,12 +155,7 @@ class PhaseManager:
         logger.info(f"Recovery movement: {move}")
 
         self.manager.controls.move(move)
-
         self.stuck_counter = 0
-
-    # =========================================================
-    # OVERWORLD EXECUTION
-    # =========================================================
 
     def _execute_overworld_action(self, action, state):
 

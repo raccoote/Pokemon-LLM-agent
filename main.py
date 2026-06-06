@@ -4,25 +4,11 @@ import threading
 from pathlib import Path
 
 import config
-
 from emulator.pyboy_manager import EmulatorManager
 from agent.planner import Planner
 from agent.memory_store import MemoryStore
-
-from skills.navigation import (
-    navigate_to,
-    explore_randomly,
-)
+from agent.phase_manager import PhaseManager
 from tools.pokemon_tools import set_manager
-
-
-from skills.battle import handle_battle
-from skills.recovery import recovery_mode
-
-
-# =========================
-# Logging
-# =========================
 
 LOG_PATH = Path(config.LOG_DIR)
 LOG_PATH.mkdir(parents=True, exist_ok=True)
@@ -38,48 +24,7 @@ logging.basicConfig(
 
 # Suppress PyBoy sound buffer overrun spam
 logging.getLogger("pyboy.core.sound").setLevel(logging.ERROR)
-
 logger = logging.getLogger("PokemonAgent")
-
-
-# =========================
-# Safe Action Parsing
-# =========================
-
-VALID_GOALS = {
-    "explore",
-    "navigate",
-    "heal",
-    "talk",
-    "battle",
-    "recover",
-}
-
-
-def sanitize_action(action: dict) -> dict:
-    if not isinstance(action, dict):
-        return {"goal": "explore"}
-
-    goal = str(action.get("goal", "explore")).lower()
-    if goal not in VALID_GOALS:
-        goal = "explore"
-
-    target = action.get("target_location")
-    if not isinstance(target, dict):
-        target = None
-
-    return {
-        "goal": goal,
-        "analysis": action.get("analysis", ""),
-        "target_location": target,
-    }
-
-
-# =========================
-# Agent Execution Thread
-# =========================
-
-from agent.phase_manager import PhaseManager
 
 def agent_loop(manager, planner, memory):
     """
@@ -103,10 +48,6 @@ def agent_loop(manager, planner, memory):
     except Exception as e:
         logger.error(f"Agent thread crashed: {e}")
 
-
-# =========================
-# Main Entrypoint (Window Thread)
-# =========================
 
 def main():
     logger.info("Starting Pokémon Red Autonomous Agent")

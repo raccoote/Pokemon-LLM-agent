@@ -19,10 +19,6 @@ class StateDetector:
     def __init__(self, manager):
         self.manager = manager
 
-    # =======================================================
-    # MAIN PHASE DETECTION
-    # =======================================================
-
     def detect_phase(self) -> GamePhase:
         try:
             gs  = self.manager.memory.get_game_state()
@@ -86,10 +82,6 @@ class StateDetector:
             logger.exception("Exception in detect_phase")
             return GamePhase.UNKNOWN
 
-    # =======================================================
-    # SIGNAL HELPERS
-    # =======================================================
-
     def _textbox_active(self, mem) -> bool:
         try:
             return mem[ADDR_TEXTBOX_ID] != 0
@@ -111,10 +103,6 @@ class StateDetector:
             return textbox == 0 and joy_ign == 0 and not script_lock
         except Exception:
             return False
-
-    # =======================================================
-    # CONVENIENCE WRAPPERS
-    # =======================================================
 
     def detect_dialogue(self, mem=None) -> bool:
         if mem is None:

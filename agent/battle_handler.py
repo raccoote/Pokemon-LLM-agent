@@ -1,6 +1,5 @@
 import logging
 import time
-from agent.phases import GamePhase
 
 logger = logging.getLogger(__name__)
 
