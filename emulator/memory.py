@@ -2,6 +2,7 @@ import logging
 import json
 from pathlib import Path
 from config import *
+from constants.pokemon_red_maps_by_id import maps
 
 logger = logging.getLogger(__name__)
 
@@ -93,4 +94,5 @@ class MemoryReader:
                 # Pre-game fingerprint
                 "player_name_byte": player_name,        # 0x50 or 0x00 = unset
                 "is_pregame":  party_size == 0 and name_unset and map_id != 0,
+                "map_info": maps.get(str(map_id), {}),
             }

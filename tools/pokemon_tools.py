@@ -1,5 +1,6 @@
 from smolagents import tool
 import logging
+import time
 from agent.state_detector import StateDetector
 
 logger = logging.getLogger(__name__)
@@ -37,7 +38,7 @@ def _state():
 def move_up() -> str:
     """
     Moves the player character one tile upward in the overworld.
-
+    Usually prefer navigate_to tool instead of this.
     Use when:
     - Navigating maps
     - Aligning with doors, NPCs, or exits
@@ -55,6 +56,7 @@ def move_up() -> str:
 def move_down() -> str:
     """
     Moves the player character one tile downward.
+    Usually prefer navigate_to tool instead of this.
 
     Returns:
         str: "down"
@@ -69,6 +71,7 @@ def move_down() -> str:
 def move_left() -> str:
     """
     Moves the player character one tile to the left.
+    Usually prefer navigate_to tool instead of this.
 
     Returns:
         str: "left"
@@ -83,6 +86,7 @@ def move_left() -> str:
 def move_right() -> str:
     """
     Moves the player character one tile to the right.
+    Usually prefer navigate_to tool instead of this.
 
     Returns:
         str: "right"
@@ -293,46 +297,75 @@ def detect_overworld() -> bool:
     if not manager:
         return False
     return _detector().detect_phase().name == "OVERWORLD"
-
 @tool
-def navigate_to(target: str) -> str:
+def navigate_to(x: int, y: int) -> str:
     """
-    High-level navigation tool that attempts to move the player toward a named target.
-
-    This is an abstract planner tool (NOT step-by-step movement).
-
-    Expected targets may include:
-    - "pallet_town"
-    - "oak_lab"
-    - "pokemart"
-    - "pokecenter"
-    - "route_1"
-    - "grass"
-    - custom map labels depending on memory system
-
-    Behavior:
-    - Uses internal pathfinding / navigation logic if available in manager
-    - Falls back to exploratory movement if no route exists
-
-    Use when:
-    - The agent has a clear destination goal
-    - Manual movement would be inefficient
-    - Recovering from exploration or reset
+    High-level navigation tool that attempts to move the player toward a specific (x, y) coordinate
+    manually using Manhattan distance and obstacle recovery logic.
 
     Args:
-        target (str): Named location or objective
+        x (int): The target X-coordinate on the current map.
+        y (int): The target Y-coordinate on the current map.
 
     Returns:
-        str: Navigation result or status message
+        str: Status message of the navigation result.
     """
     if not manager:
         return "Error: no emulator"
 
-    if hasattr(manager, "navigation") and hasattr(manager.navigation, "go_to"):
-        return str(manager.navigation.go_to(target))
+    current_x, current_y = manager.memory.get_player_pos()
 
-    return f"Navigation not available for target: {target}"
+    max_attempts = 50 
+    attempts = 0
+    INPUT_DELAY = 0.15 
 
+    while (current_x != x or current_y != y) and attempts < max_attempts:
+        attempts += 1
+        dx = x - current_x
+        dy = y - current_y
+        moved = False
+
+        if abs(dx) >= abs(dy) and dx != 0:
+            direction = "right" if dx > 0 else "left"
+            manager.controls.move(direction)
+            time.sleep(INPUT_DELAY)
+            
+            px, py = manager.memory.get_player_pos()
+            if px != current_x or py != current_y:
+                current_x, current_y = px, py
+                moved = True
+            else:
+                if dy != 0:
+                    alt_direction = "down" if dy > 0 else "up"
+                    manager.controls.move(alt_direction)
+                    time.sleep(INPUT_DELAY)
+                    current_x, current_y = manager.memory.get_player_pos()
+                    moved = (current_x != px or current_y != py)
+
+        elif dy != 0:
+            direction = "down" if dy > 0 else "up"
+            manager.controls.move(direction)
+            time.sleep(INPUT_DELAY)
+            
+            px, py = manager.memory.get_player_pos()
+            if px != current_x or py != current_y:
+                current_x, current_y = px, py
+                moved = True
+            else:
+                if dx != 0:
+                    alt_direction = "right" if dx > 0 else "left"
+                    manager.controls.move(alt_direction)
+                    time.sleep(INPUT_DELAY)
+                    current_x, current_y = manager.memory.get_player_pos()
+                    moved = (current_x != px or current_y != py)
+
+        if not moved:
+            return f"Navigation stuck near ({current_x}, {current_y}) due to an obstacle. Could not reach ({x}, {y})."
+
+    if current_x == x and current_y == y:
+        return f"Successfully navigated to ({x}, {y})."
+    else:
+        return f"Navigation timed out. Stopped at ({current_x}, {current_y})."
 @tool
 def save_state(slot: int = 0) -> str:
     """
@@ -407,30 +440,3 @@ def take_screenshot() -> str:
         return f"Screenshot saved to {path}"
 
     return "Screenshot not available"
-
-@tool
-def debug_state() -> str:
-    """
-    Returns a structured debug snapshot of the emulator state.
-
-    Use this when:
-    - The agent is confused about current game state
-    - Debugging stuck behavior
-    - Inspecting phase + dialogue detection consistency
-
-    Includes:
-    - Raw game state
-    - Detected phase
-    - Dialogue detection result
-
-    Returns:
-        str: Dictionary-like string of debug information
-    """
-    if not manager:
-        return "no manager"
-
-    return str({
-        "state": _state(),
-        "phase": _detector().detect_phase().name,
-        "dialogue": _detector().detect_dialogue(_state())
-    })

@@ -16,13 +16,13 @@ class InputManager:
         # Default cooldowns in frames
         self.default_cooldowns = {
             "a": 0,
-            "b": 5,
-            "start": 5,
-            "select": 5,
-            "up": 5,
-            "down": 5,
-            "left": 5,
-            "right": 5
+            "b": 0,
+            "start": 0,
+            "select": 0,
+            "up": 0,
+            "down": 0,
+            "left": 0,
+            "right": 0
         }
 
         self.button_map = {

@@ -1,9 +1,9 @@
-[
-  {
-    "_comment": "Pokemon Red world map with NPC coordinates, warp coordinates, and event coordinates",
-    "_references": "With the help of the assembly Pokemon Red projects -> https://github.com/pret/pokered and https://datacrystal.tcrf.net/wiki/Pok%C3%A9mon_Red_and_Blue/ROM_map"
-  },
-  {
+# Pokemon Red map data keyed by mapIdDecimal
+# Usage: maps[0]  ->  PALLET_TOWN data
+# References -> https://github.com/pret/pokered and https://datacrystal.tcrf.net/wiki/Pok%C3%A9mon_Red_and_Blue/ROM_map
+
+maps = {
+  "0": {
     "mapIdHex": "0x00",
     "mapIdDecimal": 0,
     "mapName": "PALLET_TOWN",
@@ -69,7 +69,7 @@
       }
     ]
   },
-  {
+  "1": {
     "mapIdHex": "0x01",
     "mapIdDecimal": 1,
     "mapName": "VIRIDIAN_CITY",
@@ -177,7 +177,7 @@
       }
     ]
   },
-  {
+  "2": {
     "mapIdHex": "0x02",
     "mapIdDecimal": 2,
     "mapName": "PEWTER_CITY",
@@ -292,7 +292,7 @@
       }
     ]
   },
-  {
+  "3": {
     "mapIdHex": "0x03",
     "mapIdDecimal": 3,
     "mapName": "CERULEAN_CITY",
@@ -450,7 +450,7 @@
       }
     ]
   },
-  {
+  "4": {
     "mapIdHex": "0x04",
     "mapIdDecimal": 4,
     "mapName": "LAVENDER_TOWN",
@@ -544,7 +544,7 @@
       }
     ]
   },
-  {
+  "5": {
     "mapIdHex": "0x05",
     "mapIdDecimal": 5,
     "mapName": "VERMILION_CITY",
@@ -676,7 +676,7 @@
       }
     ]
   },
-  {
+  "6": {
     "mapIdHex": "0x06",
     "mapIdDecimal": 6,
     "mapName": "CELADON_CITY",
@@ -857,7 +857,7 @@
       }
     ]
   },
-  {
+  "7": {
     "mapIdHex": "0x07",
     "mapIdDecimal": 7,
     "mapName": "FUCHSIA_CITY",
@@ -1044,7 +1044,7 @@
       }
     ]
   },
-  {
+  "8": {
     "mapIdHex": "0x08",
     "mapIdDecimal": 8,
     "mapName": "CINNABAR_ISLAND",
@@ -1122,7 +1122,7 @@
       }
     ]
   },
-  {
+  "9": {
     "mapIdHex": "0x09",
     "mapIdDecimal": 9,
     "mapName": "INDIGO_PLATEAU",
@@ -1143,7 +1143,7 @@
       }
     ]
   },
-  {
+  "10": {
     "mapIdHex": "0x0A",
     "mapIdDecimal": 10,
     "mapName": "SAFFRON_CITY",
@@ -1329,14 +1329,14 @@
       }
     ]
   },
-  {
+  "11": {
     "mapIdHex": "0x0B",
     "mapIdDecimal": 11,
     "mapName": "UNUSED_MAP_0B",
     "width": 0,
     "height": 0
   },
-  {
+  "12": {
     "mapIdHex": "0x0C",
     "mapIdDecimal": 12,
     "mapName": "ROUTE_1",
@@ -1363,7 +1363,7 @@
       }
     ]
   },
-  {
+  "13": {
     "mapIdHex": "0x0D",
     "mapIdDecimal": 13,
     "mapName": "ROUTE_2",
@@ -1432,7 +1432,7 @@
       }
     ]
   },
-  {
+  "14": {
     "mapIdHex": "0x0E",
     "mapIdDecimal": 14,
     "mapName": "ROUTE_3",
@@ -1494,7 +1494,7 @@
       }
     ]
   },
-  {
+  "15": {
     "mapIdHex": "0x0F",
     "mapIdDecimal": 15,
     "mapName": "ROUTE_4",
@@ -1555,7 +1555,7 @@
       }
     ]
   },
-  {
+  "16": {
     "mapIdHex": "0x10",
     "mapIdDecimal": 16,
     "mapName": "ROUTE_5",
@@ -1601,7 +1601,7 @@
       }
     ]
   },
-  {
+  "17": {
     "mapIdHex": "0x11",
     "mapIdDecimal": 17,
     "mapName": "ROUTE_6",
@@ -1673,7 +1673,7 @@
       }
     ]
   },
-  {
+  "18": {
     "mapIdHex": "0x12",
     "mapIdDecimal": 18,
     "mapName": "ROUTE_7",
@@ -1719,7 +1719,7 @@
       }
     ]
   },
-  {
+  "19": {
     "mapIdHex": "0x13",
     "mapIdDecimal": 19,
     "mapName": "ROUTE_8",
@@ -1812,7 +1812,7 @@
       }
     ]
   },
-  {
+  "20": {
     "mapIdHex": "0x14",
     "mapIdDecimal": 20,
     "mapName": "ROUTE_9",
@@ -1879,7 +1879,7 @@
       }
     ]
   },
-  {
+  "21": {
     "mapIdHex": "0x15",
     "mapIdDecimal": 21,
     "mapName": "ROUTE_10",
@@ -1966,7 +1966,7 @@
       }
     ]
   },
-  {
+  "22": {
     "mapIdHex": "0x16",
     "mapIdDecimal": 22,
     "mapName": "ROUTE_11",
@@ -2064,7 +2064,7 @@
       }
     ]
   },
-  {
+  "23": {
     "mapIdHex": "0x17",
     "mapIdDecimal": 23,
     "mapName": "ROUTE_12",
@@ -2161,7 +2161,7 @@
       }
     ]
   },
-  {
+  "24": {
     "mapIdHex": "0x18",
     "mapIdDecimal": 24,
     "mapName": "ROUTE_13",
@@ -2238,7 +2238,7 @@
       }
     ]
   },
-  {
+  "25": {
     "mapIdHex": "0x19",
     "mapIdDecimal": 25,
     "mapName": "ROUTE_14",
@@ -2305,7 +2305,7 @@
       }
     ]
   },
-  {
+  "26": {
     "mapIdHex": "0x1A",
     "mapIdDecimal": 26,
     "mapName": "ROUTE_15",
@@ -2402,7 +2402,7 @@
       }
     ]
   },
-  {
+  "27": {
     "mapIdHex": "0x1B",
     "mapIdDecimal": 27,
     "mapName": "ROUTE_16",
@@ -2514,7 +2514,7 @@
       }
     ]
   },
-  {
+  "28": {
     "mapIdHex": "0x1C",
     "mapIdDecimal": 28,
     "mapName": "ROUTE_17",
@@ -2606,7 +2606,7 @@
       }
     ]
   },
-  {
+  "29": {
     "mapIdHex": "0x1D",
     "mapIdDecimal": 29,
     "mapName": "ROUTE_18",
@@ -2668,7 +2668,7 @@
       }
     ]
   },
-  {
+  "30": {
     "mapIdHex": "0x1E",
     "mapIdDecimal": 30,
     "mapName": "ROUTE_19",
@@ -2735,7 +2735,7 @@
       }
     ]
   },
-  {
+  "31": {
     "mapIdHex": "0x1F",
     "mapIdDecimal": 31,
     "mapName": "ROUTE_20",
@@ -2820,7 +2820,7 @@
       }
     ]
   },
-  {
+  "32": {
     "mapIdHex": "0x20",
     "mapIdDecimal": 32,
     "mapName": "ROUTE_21",
@@ -2875,7 +2875,7 @@
       }
     ]
   },
-  {
+  "33": {
     "mapIdHex": "0x21",
     "mapIdDecimal": 33,
     "mapName": "ROUTE_22",
@@ -2909,7 +2909,7 @@
       }
     ]
   },
-  {
+  "34": {
     "mapIdHex": "0x22",
     "mapIdDecimal": 34,
     "mapName": "ROUTE_23",
@@ -2986,7 +2986,7 @@
       }
     ]
   },
-  {
+  "35": {
     "mapIdHex": "0x23",
     "mapIdDecimal": 35,
     "mapName": "ROUTE_24",
@@ -3036,7 +3036,7 @@
       }
     ]
   },
-  {
+  "36": {
     "mapIdHex": "0x24",
     "mapIdDecimal": 36,
     "mapName": "ROUTE_25",
@@ -3110,7 +3110,7 @@
       }
     ]
   },
-  {
+  "37": {
     "mapIdHex": "0x25",
     "mapIdDecimal": 37,
     "mapName": "REDS_HOUSE_1F",
@@ -3151,7 +3151,7 @@
       }
     ]
   },
-  {
+  "38": {
     "mapIdHex": "0x26",
     "mapIdDecimal": 38,
     "mapName": "REDS_HOUSE_2F",
@@ -3166,7 +3166,7 @@
       }
     ]
   },
-  {
+  "39": {
     "mapIdHex": "0x27",
     "mapIdDecimal": 39,
     "mapName": "BLUES_HOUSE",
@@ -3204,7 +3204,7 @@
       }
     ]
   },
-  {
+  "40": {
     "mapIdHex": "0x28",
     "mapIdDecimal": 40,
     "mapName": "OAKS_LAB",
@@ -3282,7 +3282,7 @@
       }
     ]
   },
-  {
+  "41": {
     "mapIdHex": "0x29",
     "mapIdDecimal": 41,
     "mapName": "VIRIDIAN_POKECENTER",
@@ -3325,7 +3325,7 @@
       }
     ]
   },
-  {
+  "42": {
     "mapIdHex": "0x2A",
     "mapIdDecimal": 42,
     "mapName": "VIRIDIAN_MART",
@@ -3363,7 +3363,7 @@
       }
     ]
   },
-  {
+  "43": {
     "mapIdHex": "0x2B",
     "mapIdDecimal": 43,
     "mapName": "VIRIDIAN_SCHOOL_HOUSE",
@@ -3396,7 +3396,7 @@
       }
     ]
   },
-  {
+  "44": {
     "mapIdHex": "0x2C",
     "mapIdDecimal": 44,
     "mapName": "VIRIDIAN_NICKNAME_HOUSE",
@@ -3439,7 +3439,7 @@
       }
     ]
   },
-  {
+  "45": {
     "mapIdHex": "0x2D",
     "mapIdDecimal": 45,
     "mapName": "VIRIDIAN_GYM",
@@ -3517,7 +3517,7 @@
       }
     ]
   },
-  {
+  "46": {
     "mapIdHex": "0x2E",
     "mapIdDecimal": 46,
     "mapName": "DIGLETTS_CAVE_ROUTE_2",
@@ -3551,7 +3551,7 @@
       }
     ]
   },
-  {
+  "47": {
     "mapIdHex": "0x2F",
     "mapIdDecimal": 47,
     "mapName": "VIRIDIAN_FOREST_NORTH_GATE",
@@ -3596,7 +3596,7 @@
       }
     ]
   },
-  {
+  "48": {
     "mapIdHex": "0x30",
     "mapIdDecimal": 48,
     "mapName": "ROUTE_2_TRADE_HOUSE",
@@ -3629,7 +3629,7 @@
       }
     ]
   },
-  {
+  "49": {
     "mapIdHex": "0x31",
     "mapIdDecimal": 49,
     "mapName": "ROUTE_2_GATE",
@@ -3674,7 +3674,7 @@
       }
     ]
   },
-  {
+  "50": {
     "mapIdHex": "0x32",
     "mapIdDecimal": 50,
     "mapName": "VIRIDIAN_FOREST_SOUTH_GATE",
@@ -3719,7 +3719,7 @@
       }
     ]
   },
-  {
+  "51": {
     "mapIdHex": "0x33",
     "mapIdDecimal": 51,
     "mapName": "VIRIDIAN_FOREST",
@@ -3838,7 +3838,7 @@
       }
     ]
   },
-  {
+  "52": {
     "mapIdHex": "0x34",
     "mapIdDecimal": 52,
     "mapName": "MUSEUM_1F",
@@ -3904,7 +3904,7 @@
       }
     ]
   },
-  {
+  "53": {
     "mapIdHex": "0x35",
     "mapIdDecimal": 53,
     "mapName": "MUSEUM_2F",
@@ -3958,7 +3958,7 @@
       }
     ]
   },
-  {
+  "54": {
     "mapIdHex": "0x36",
     "mapIdDecimal": 54,
     "mapName": "PEWTER_GYM",
@@ -3996,7 +3996,7 @@
       }
     ]
   },
-  {
+  "55": {
     "mapIdHex": "0x37",
     "mapIdDecimal": 55,
     "mapName": "PEWTER_NIDORAN_HOUSE",
@@ -4034,7 +4034,7 @@
       }
     ]
   },
-  {
+  "56": {
     "mapIdHex": "0x38",
     "mapIdDecimal": 56,
     "mapName": "PEWTER_MART",
@@ -4072,7 +4072,7 @@
       }
     ]
   },
-  {
+  "57": {
     "mapIdHex": "0x39",
     "mapIdDecimal": 57,
     "mapName": "PEWTER_SPEECH_HOUSE",
@@ -4105,7 +4105,7 @@
       }
     ]
   },
-  {
+  "58": {
     "mapIdHex": "0x3A",
     "mapIdDecimal": 58,
     "mapName": "PEWTER_POKECENTER",
@@ -4148,7 +4148,7 @@
       }
     ]
   },
-  {
+  "59": {
     "mapIdHex": "0x3B",
     "mapIdDecimal": 59,
     "mapName": "MT_MOON_1F",
@@ -4261,7 +4261,7 @@
       }
     ]
   },
-  {
+  "60": {
     "mapIdHex": "0x3C",
     "mapIdDecimal": 60,
     "mapName": "MT_MOON_B1F",
@@ -4318,7 +4318,7 @@
       }
     ]
   },
-  {
+  "61": {
     "mapIdHex": "0x3D",
     "mapIdDecimal": 61,
     "mapName": "MT_MOON_B2F",
@@ -4398,7 +4398,7 @@
       }
     ]
   },
-  {
+  "62": {
     "mapIdHex": "0x3E",
     "mapIdDecimal": 62,
     "mapName": "CERULEAN_TRASHED_HOUSE",
@@ -4444,7 +4444,7 @@
       }
     ]
   },
-  {
+  "63": {
     "mapIdHex": "0x3F",
     "mapIdDecimal": 63,
     "mapName": "CERULEAN_TRADE_HOUSE",
@@ -4477,7 +4477,7 @@
       }
     ]
   },
-  {
+  "64": {
     "mapIdHex": "0x40",
     "mapIdDecimal": 64,
     "mapName": "CERULEAN_POKECENTER",
@@ -4520,7 +4520,7 @@
       }
     ]
   },
-  {
+  "65": {
     "mapIdHex": "0x41",
     "mapIdDecimal": 65,
     "mapName": "CERULEAN_GYM",
@@ -4563,7 +4563,7 @@
       }
     ]
   },
-  {
+  "66": {
     "mapIdHex": "0x42",
     "mapIdDecimal": 66,
     "mapName": "BIKE_SHOP",
@@ -4601,7 +4601,7 @@
       }
     ]
   },
-  {
+  "67": {
     "mapIdHex": "0x43",
     "mapIdDecimal": 67,
     "mapName": "CERULEAN_MART",
@@ -4639,7 +4639,7 @@
       }
     ]
   },
-  {
+  "68": {
     "mapIdHex": "0x44",
     "mapIdDecimal": 68,
     "mapName": "MT_MOON_POKECENTER",
@@ -4692,14 +4692,14 @@
       }
     ]
   },
-  {
+  "69": {
     "mapIdHex": "0x45",
     "mapIdDecimal": 69,
     "mapName": "CERULEAN_TRASHED_HOUSE_COPY",
     "width": 4,
     "height": 4
   },
-  {
+  "70": {
     "mapIdHex": "0x46",
     "mapIdDecimal": 70,
     "mapName": "ROUTE_5_GATE",
@@ -4739,7 +4739,7 @@
       }
     ]
   },
-  {
+  "71": {
     "mapIdHex": "0x47",
     "mapIdDecimal": 71,
     "mapName": "UNDERGROUND_PATH_ROUTE_5",
@@ -4773,7 +4773,7 @@
       }
     ]
   },
-  {
+  "72": {
     "mapIdHex": "0x48",
     "mapIdDecimal": 72,
     "mapName": "DAYCARE",
@@ -4801,7 +4801,7 @@
       }
     ]
   },
-  {
+  "73": {
     "mapIdHex": "0x49",
     "mapIdDecimal": 73,
     "mapName": "ROUTE_6_GATE",
@@ -4841,7 +4841,7 @@
       }
     ]
   },
-  {
+  "74": {
     "mapIdHex": "0x4A",
     "mapIdDecimal": 74,
     "mapName": "UNDERGROUND_PATH_ROUTE_6",
@@ -4875,14 +4875,14 @@
       }
     ]
   },
-  {
+  "75": {
     "mapIdHex": "0x4B",
     "mapIdDecimal": 75,
     "mapName": "UNDERGROUND_PATH_ROUTE_6_COPY",
     "width": 4,
     "height": 4
   },
-  {
+  "76": {
     "mapIdHex": "0x4C",
     "mapIdDecimal": 76,
     "mapName": "ROUTE_7_GATE",
@@ -4922,7 +4922,7 @@
       }
     ]
   },
-  {
+  "77": {
     "mapIdHex": "0x4D",
     "mapIdDecimal": 77,
     "mapName": "UNDERGROUND_PATH_ROUTE_7",
@@ -4956,7 +4956,7 @@
       }
     ]
   },
-  {
+  "78": {
     "mapIdHex": "0x4E",
     "mapIdDecimal": 78,
     "mapName": "UNDERGROUND_PATH_ROUTE_7_COPY",
@@ -4995,7 +4995,7 @@
       }
     ]
   },
-  {
+  "79": {
     "mapIdHex": "0x4F",
     "mapIdDecimal": 79,
     "mapName": "ROUTE_8_GATE",
@@ -5035,7 +5035,7 @@
       }
     ]
   },
-  {
+  "80": {
     "mapIdHex": "0x50",
     "mapIdDecimal": 80,
     "mapName": "UNDERGROUND_PATH_ROUTE_8",
@@ -5069,7 +5069,7 @@
       }
     ]
   },
-  {
+  "81": {
     "mapIdHex": "0x51",
     "mapIdDecimal": 81,
     "mapName": "ROCK_TUNNEL_POKECENTER",
@@ -5112,7 +5112,7 @@
       }
     ]
   },
-  {
+  "82": {
     "mapIdHex": "0x52",
     "mapIdDecimal": 82,
     "mapName": "ROCK_TUNNEL_1F",
@@ -5213,7 +5213,7 @@
       }
     ]
   },
-  {
+  "83": {
     "mapIdHex": "0x53",
     "mapIdDecimal": 83,
     "mapName": "POWER_PLANT",
@@ -5312,7 +5312,7 @@
       }
     ]
   },
-  {
+  "84": {
     "mapIdHex": "0x54",
     "mapIdDecimal": 84,
     "mapName": "ROUTE_11_GATE_1F",
@@ -5358,7 +5358,7 @@
       }
     ]
   },
-  {
+  "85": {
     "mapIdHex": "0x55",
     "mapIdDecimal": 85,
     "mapName": "DIGLETTS_CAVE_ROUTE_11",
@@ -5392,7 +5392,7 @@
       }
     ]
   },
-  {
+  "86": {
     "mapIdHex": "0x56",
     "mapIdDecimal": 86,
     "mapName": "ROUTE_11_GATE_2F",
@@ -5431,7 +5431,7 @@
       }
     ]
   },
-  {
+  "87": {
     "mapIdHex": "0x57",
     "mapIdDecimal": 87,
     "mapName": "ROUTE_12_GATE_1F",
@@ -5477,7 +5477,7 @@
       }
     ]
   },
-  {
+  "88": {
     "mapIdHex": "0x58",
     "mapIdDecimal": 88,
     "mapName": "BILLS_HOUSE",
@@ -5515,7 +5515,7 @@
       }
     ]
   },
-  {
+  "89": {
     "mapIdHex": "0x59",
     "mapIdDecimal": 89,
     "mapName": "VERMILION_POKECENTER",
@@ -5558,7 +5558,7 @@
       }
     ]
   },
-  {
+  "90": {
     "mapIdHex": "0x5A",
     "mapIdDecimal": 90,
     "mapName": "POKEMON_FAN_CLUB",
@@ -5623,7 +5623,7 @@
       }
     ]
   },
-  {
+  "91": {
     "mapIdHex": "0x5B",
     "mapIdDecimal": 91,
     "mapName": "VERMILION_MART",
@@ -5661,7 +5661,7 @@
       }
     ]
   },
-  {
+  "92": {
     "mapIdHex": "0x5C",
     "mapIdDecimal": 92,
     "mapName": "VERMILION_GYM",
@@ -5709,7 +5709,7 @@
       }
     ]
   },
-  {
+  "93": {
     "mapIdHex": "0x5D",
     "mapIdDecimal": 93,
     "mapName": "VERMILION_PIDGEY_HOUSE",
@@ -5747,7 +5747,7 @@
       }
     ]
   },
-  {
+  "94": {
     "mapIdHex": "0x5E",
     "mapIdDecimal": 94,
     "mapName": "VERMILION_DOCK",
@@ -5768,7 +5768,7 @@
       }
     ]
   },
-  {
+  "95": {
     "mapIdHex": "0x5F",
     "mapIdDecimal": 95,
     "mapName": "SS_ANNE_1F",
@@ -5855,7 +5855,7 @@
       }
     ]
   },
-  {
+  "96": {
     "mapIdHex": "0x60",
     "mapIdDecimal": 96,
     "mapName": "SS_ANNE_2F",
@@ -5930,7 +5930,7 @@
       }
     ]
   },
-  {
+  "97": {
     "mapIdHex": "0x61",
     "mapIdDecimal": 97,
     "mapName": "SS_ANNE_3F",
@@ -5958,7 +5958,7 @@
       }
     ]
   },
-  {
+  "98": {
     "mapIdHex": "0x62",
     "mapIdDecimal": 98,
     "mapName": "SS_ANNE_B1F",
@@ -6003,7 +6003,7 @@
       }
     ]
   },
-  {
+  "99": {
     "mapIdHex": "0x63",
     "mapIdDecimal": 99,
     "mapName": "SS_ANNE_BOW",
@@ -6051,7 +6051,7 @@
       }
     ]
   },
-  {
+  "100": {
     "mapIdHex": "0x64",
     "mapIdDecimal": 100,
     "mapName": "SS_ANNE_KITCHEN",
@@ -6103,7 +6103,7 @@
       }
     ]
   },
-  {
+  "101": {
     "mapIdHex": "0x65",
     "mapIdDecimal": 101,
     "mapName": "SS_ANNE_CAPTAINS_ROOM",
@@ -6137,7 +6137,7 @@
       }
     ]
   },
-  {
+  "102": {
     "mapIdHex": "0x66",
     "mapIdDecimal": 102,
     "mapName": "SS_ANNE_1F_ROOMS",
@@ -6239,7 +6239,7 @@
       }
     ]
   },
-  {
+  "103": {
     "mapIdHex": "0x67",
     "mapIdDecimal": 103,
     "mapName": "SS_ANNE_2F_ROOMS",
@@ -6387,7 +6387,7 @@
       }
     ]
   },
-  {
+  "104": {
     "mapIdHex": "0x68",
     "mapIdDecimal": 104,
     "mapName": "SS_ANNE_B1F_ROOMS",
@@ -6513,28 +6513,28 @@
       }
     ]
   },
-  {
+  "105": {
     "mapIdHex": "0x69",
     "mapIdDecimal": 105,
     "mapName": "UNUSED_MAP_69",
     "width": 0,
     "height": 0
   },
-  {
+  "106": {
     "mapIdHex": "0x6A",
     "mapIdDecimal": 106,
     "mapName": "UNUSED_MAP_6A",
     "width": 0,
     "height": 0
   },
-  {
+  "107": {
     "mapIdHex": "0x6B",
     "mapIdDecimal": 107,
     "mapName": "UNUSED_MAP_6B",
     "width": 0,
     "height": 0
   },
-  {
+  "108": {
     "mapIdHex": "0x6C",
     "mapIdDecimal": 108,
     "mapName": "VICTORY_ROAD_1F",
@@ -6598,35 +6598,35 @@
       }
     ]
   },
-  {
+  "109": {
     "mapIdHex": "0x6D",
     "mapIdDecimal": 109,
     "mapName": "UNUSED_MAP_6D",
     "width": 0,
     "height": 0
   },
-  {
+  "110": {
     "mapIdHex": "0x6E",
     "mapIdDecimal": 110,
     "mapName": "UNUSED_MAP_6E",
     "width": 0,
     "height": 0
   },
-  {
+  "111": {
     "mapIdHex": "0x6F",
     "mapIdDecimal": 111,
     "mapName": "UNUSED_MAP_6F",
     "width": 0,
     "height": 0
   },
-  {
+  "112": {
     "mapIdHex": "0x70",
     "mapIdDecimal": 112,
     "mapName": "UNUSED_MAP_70",
     "width": 0,
     "height": 0
   },
-  {
+  "113": {
     "mapIdHex": "0x71",
     "mapIdDecimal": 113,
     "mapName": "LANCES_ROOM",
@@ -6660,35 +6660,35 @@
       }
     ]
   },
-  {
+  "114": {
     "mapIdHex": "0x72",
     "mapIdDecimal": 114,
     "mapName": "UNUSED_MAP_72",
     "width": 0,
     "height": 0
   },
-  {
+  "115": {
     "mapIdHex": "0x73",
     "mapIdDecimal": 115,
     "mapName": "UNUSED_MAP_73",
     "width": 0,
     "height": 0
   },
-  {
+  "116": {
     "mapIdHex": "0x74",
     "mapIdDecimal": 116,
     "mapName": "UNUSED_MAP_74",
     "width": 0,
     "height": 0
   },
-  {
+  "117": {
     "mapIdHex": "0x75",
     "mapIdDecimal": 117,
     "mapName": "UNUSED_MAP_75",
     "width": 0,
     "height": 0
   },
-  {
+  "118": {
     "mapIdHex": "0x76",
     "mapIdDecimal": 118,
     "mapName": "HALL_OF_FAME",
@@ -6716,7 +6716,7 @@
       }
     ]
   },
-  {
+  "119": {
     "mapIdHex": "0x77",
     "mapIdDecimal": 119,
     "mapName": "UNDERGROUND_PATH_NORTH_SOUTH",
@@ -6737,7 +6737,7 @@
       }
     ]
   },
-  {
+  "120": {
     "mapIdHex": "0x78",
     "mapIdDecimal": 120,
     "mapName": "CHAMPIONS_ROOM",
@@ -6782,7 +6782,7 @@
       }
     ]
   },
-  {
+  "121": {
     "mapIdHex": "0x79",
     "mapIdDecimal": 121,
     "mapName": "UNDERGROUND_PATH_WEST_EAST",
@@ -6803,7 +6803,7 @@
       }
     ]
   },
-  {
+  "122": {
     "mapIdHex": "0x7A",
     "mapIdDecimal": 122,
     "mapName": "CELADON_MART_1F",
@@ -6867,7 +6867,7 @@
       }
     ]
   },
-  {
+  "123": {
     "mapIdHex": "0x7B",
     "mapIdDecimal": 123,
     "mapName": "CELADON_MART_2F",
@@ -6923,7 +6923,7 @@
       }
     ]
   },
-  {
+  "124": {
     "mapIdHex": "0x7C",
     "mapIdDecimal": 124,
     "mapName": "CELADON_MART_3F",
@@ -7039,7 +7039,7 @@
       }
     ]
   },
-  {
+  "125": {
     "mapIdHex": "0x7D",
     "mapIdDecimal": 125,
     "mapName": "CELADON_MART_4F",
@@ -7090,7 +7090,7 @@
       }
     ]
   },
-  {
+  "126": {
     "mapIdHex": "0x7E",
     "mapIdDecimal": 126,
     "mapName": "CELADON_MART_ROOF",
@@ -7139,7 +7139,7 @@
       }
     ]
   },
-  {
+  "127": {
     "mapIdHex": "0x7F",
     "mapIdDecimal": 127,
     "mapName": "CELADON_MART_ELEVATOR",
@@ -7167,7 +7167,7 @@
       }
     ]
   },
-  {
+  "128": {
     "mapIdHex": "0x80",
     "mapIdDecimal": 128,
     "mapName": "CELADON_MANSION_1F",
@@ -7235,7 +7235,7 @@
       }
     ]
   },
-  {
+  "129": {
     "mapIdHex": "0x81",
     "mapIdDecimal": 129,
     "mapName": "CELADON_MANSION_2F",
@@ -7275,7 +7275,7 @@
       }
     ]
   },
-  {
+  "130": {
     "mapIdHex": "0x82",
     "mapIdDecimal": 130,
     "mapName": "CELADON_MANSION_3F",
@@ -7352,7 +7352,7 @@
       }
     ]
   },
-  {
+  "131": {
     "mapIdHex": "0x83",
     "mapIdDecimal": 131,
     "mapName": "CELADON_MANSION_ROOF",
@@ -7386,7 +7386,7 @@
       }
     ]
   },
-  {
+  "132": {
     "mapIdHex": "0x84",
     "mapIdDecimal": 132,
     "mapName": "CELADON_MANSION_ROOF_HOUSE",
@@ -7419,7 +7419,7 @@
       }
     ]
   },
-  {
+  "133": {
     "mapIdHex": "0x85",
     "mapIdDecimal": 133,
     "mapName": "CELADON_POKECENTER",
@@ -7462,7 +7462,7 @@
       }
     ]
   },
-  {
+  "134": {
     "mapIdHex": "0x86",
     "mapIdDecimal": 134,
     "mapName": "CELADON_GYM",
@@ -7525,7 +7525,7 @@
       }
     ]
   },
-  {
+  "135": {
     "mapIdHex": "0x87",
     "mapIdDecimal": 135,
     "mapName": "GAME_CORNER",
@@ -7616,7 +7616,7 @@
       }
     ]
   },
-  {
+  "136": {
     "mapIdHex": "0x88",
     "mapIdDecimal": 136,
     "mapName": "CELADON_MART_5F",
@@ -7672,7 +7672,7 @@
       }
     ]
   },
-  {
+  "137": {
     "mapIdHex": "0x89",
     "mapIdDecimal": 137,
     "mapName": "GAME_CORNER_PRIZE_ROOM",
@@ -7722,7 +7722,7 @@
       }
     ]
   },
-  {
+  "138": {
     "mapIdHex": "0x8A",
     "mapIdDecimal": 138,
     "mapName": "CELADON_DINER",
@@ -7770,7 +7770,7 @@
       }
     ]
   },
-  {
+  "139": {
     "mapIdHex": "0x8B",
     "mapIdDecimal": 139,
     "mapName": "CELADON_CHIEF_HOUSE",
@@ -7808,7 +7808,7 @@
       }
     ]
   },
-  {
+  "140": {
     "mapIdHex": "0x8C",
     "mapIdDecimal": 140,
     "mapName": "CELADON_HOTEL",
@@ -7846,7 +7846,7 @@
       }
     ]
   },
-  {
+  "141": {
     "mapIdHex": "0x8D",
     "mapIdDecimal": 141,
     "mapName": "LAVENDER_POKECENTER",
@@ -7889,7 +7889,7 @@
       }
     ]
   },
-  {
+  "142": {
     "mapIdHex": "0x8E",
     "mapIdDecimal": 142,
     "mapName": "POKEMON_TOWER_1F",
@@ -7943,7 +7943,7 @@
       }
     ]
   },
-  {
+  "143": {
     "mapIdHex": "0x8F",
     "mapIdDecimal": 143,
     "mapName": "POKEMON_TOWER_2F",
@@ -7976,7 +7976,7 @@
       }
     ]
   },
-  {
+  "144": {
     "mapIdHex": "0x90",
     "mapIdDecimal": 144,
     "mapName": "POKEMON_TOWER_3F",
@@ -8019,7 +8019,7 @@
       }
     ]
   },
-  {
+  "145": {
     "mapIdHex": "0x91",
     "mapIdDecimal": 145,
     "mapName": "POKEMON_TOWER_4F",
@@ -8072,7 +8072,7 @@
       }
     ]
   },
-  {
+  "146": {
     "mapIdHex": "0x92",
     "mapIdDecimal": 146,
     "mapName": "POKEMON_TOWER_5F",
@@ -8125,7 +8125,7 @@
       }
     ]
   },
-  {
+  "147": {
     "mapIdHex": "0x93",
     "mapIdDecimal": 147,
     "mapName": "POKEMON_TOWER_6F",
@@ -8173,7 +8173,7 @@
       }
     ]
   },
-  {
+  "148": {
     "mapIdHex": "0x94",
     "mapIdDecimal": 148,
     "mapName": "POKEMON_TOWER_7F",
@@ -8210,7 +8210,7 @@
       }
     ]
   },
-  {
+  "149": {
     "mapIdHex": "0x95",
     "mapIdDecimal": 149,
     "mapName": "MR_FUJIS_HOUSE",
@@ -8263,7 +8263,7 @@
       }
     ]
   },
-  {
+  "150": {
     "mapIdHex": "0x96",
     "mapIdDecimal": 150,
     "mapName": "LAVENDER_MART",
@@ -8301,7 +8301,7 @@
       }
     ]
   },
-  {
+  "151": {
     "mapIdHex": "0x97",
     "mapIdDecimal": 151,
     "mapName": "LAVENDER_CUBONE_HOUSE",
@@ -8334,7 +8334,7 @@
       }
     ]
   },
-  {
+  "152": {
     "mapIdHex": "0x98",
     "mapIdDecimal": 152,
     "mapName": "FUCHSIA_MART",
@@ -8372,7 +8372,7 @@
       }
     ]
   },
-  {
+  "153": {
     "mapIdHex": "0x99",
     "mapIdDecimal": 153,
     "mapName": "FUCHSIA_BILLS_GRANDPAS_HOUSE",
@@ -8410,7 +8410,7 @@
       }
     ]
   },
-  {
+  "154": {
     "mapIdHex": "0x9A",
     "mapIdDecimal": 154,
     "mapName": "FUCHSIA_POKECENTER",
@@ -8453,7 +8453,7 @@
       }
     ]
   },
-  {
+  "155": {
     "mapIdHex": "0x9B",
     "mapIdDecimal": 155,
     "mapName": "WARDENS_HOUSE",
@@ -8503,7 +8503,7 @@
       }
     ]
   },
-  {
+  "156": {
     "mapIdHex": "0x9C",
     "mapIdDecimal": 156,
     "mapName": "SAFARI_ZONE_GATE",
@@ -8548,7 +8548,7 @@
       }
     ]
   },
-  {
+  "157": {
     "mapIdHex": "0x9D",
     "mapIdDecimal": 157,
     "mapName": "FUCHSIA_GYM",
@@ -8611,7 +8611,7 @@
       }
     ]
   },
-  {
+  "158": {
     "mapIdHex": "0x9E",
     "mapIdDecimal": 158,
     "mapName": "FUCHSIA_MEETING_ROOM",
@@ -8649,7 +8649,7 @@
       }
     ]
   },
-  {
+  "159": {
     "mapIdHex": "0x9F",
     "mapIdDecimal": 159,
     "mapName": "SEAFOAM_ISLANDS_B1F",
@@ -8712,7 +8712,7 @@
       }
     ]
   },
-  {
+  "160": {
     "mapIdHex": "0xA0",
     "mapIdDecimal": 160,
     "mapName": "SEAFOAM_ISLANDS_B2F",
@@ -8775,7 +8775,7 @@
       }
     ]
   },
-  {
+  "161": {
     "mapIdHex": "0xA1",
     "mapIdDecimal": 161,
     "mapName": "SEAFOAM_ISLANDS_B3F",
@@ -8858,7 +8858,7 @@
       }
     ]
   },
-  {
+  "162": {
     "mapIdHex": "0xA2",
     "mapIdDecimal": 162,
     "mapName": "SEAFOAM_ISLANDS_B4F",
@@ -8920,7 +8920,7 @@
       }
     ]
   },
-  {
+  "163": {
     "mapIdHex": "0xA3",
     "mapIdDecimal": 163,
     "mapName": "VERMILION_OLD_ROD_HOUSE",
@@ -8948,7 +8948,7 @@
       }
     ]
   },
-  {
+  "164": {
     "mapIdHex": "0xA4",
     "mapIdDecimal": 164,
     "mapName": "FUCHSIA_GOOD_ROD_HOUSE",
@@ -8982,7 +8982,7 @@
       }
     ]
   },
-  {
+  "165": {
     "mapIdHex": "0xA5",
     "mapIdDecimal": 165,
     "mapName": "POKEMON_MANSION_1F",
@@ -9056,7 +9056,7 @@
       }
     ]
   },
-  {
+  "166": {
     "mapIdHex": "0xA6",
     "mapIdDecimal": 166,
     "mapName": "CINNABAR_GYM",
@@ -9124,7 +9124,7 @@
       }
     ]
   },
-  {
+  "167": {
     "mapIdHex": "0xA7",
     "mapIdDecimal": 167,
     "mapName": "CINNABAR_LAB",
@@ -9192,7 +9192,7 @@
       }
     ]
   },
-  {
+  "168": {
     "mapIdHex": "0xA8",
     "mapIdDecimal": 168,
     "mapName": "CINNABAR_LAB_TRADE_ROOM",
@@ -9230,7 +9230,7 @@
       }
     ]
   },
-  {
+  "169": {
     "mapIdHex": "0xA9",
     "mapIdDecimal": 169,
     "mapName": "CINNABAR_LAB_METRONOME_ROOM",
@@ -9280,7 +9280,7 @@
       }
     ]
   },
-  {
+  "170": {
     "mapIdHex": "0xAA",
     "mapIdDecimal": 170,
     "mapName": "CINNABAR_LAB_FOSSIL_ROOM",
@@ -9313,7 +9313,7 @@
       }
     ]
   },
-  {
+  "171": {
     "mapIdHex": "0xAB",
     "mapIdDecimal": 171,
     "mapName": "CINNABAR_POKECENTER",
@@ -9356,7 +9356,7 @@
       }
     ]
   },
-  {
+  "172": {
     "mapIdHex": "0xAC",
     "mapIdDecimal": 172,
     "mapName": "CINNABAR_MART",
@@ -9394,14 +9394,14 @@
       }
     ]
   },
-  {
+  "173": {
     "mapIdHex": "0xAD",
     "mapIdDecimal": 173,
     "mapName": "CINNABAR_MART_COPY",
     "width": 4,
     "height": 4
   },
-  {
+  "174": {
     "mapIdHex": "0xAE",
     "mapIdDecimal": 174,
     "mapName": "INDIGO_PLATEAU_LOBBY",
@@ -9455,7 +9455,7 @@
       }
     ]
   },
-  {
+  "175": {
     "mapIdHex": "0xAF",
     "mapIdDecimal": 175,
     "mapName": "COPYCATS_HOUSE_1F",
@@ -9499,7 +9499,7 @@
       }
     ]
   },
-  {
+  "176": {
     "mapIdHex": "0xB0",
     "mapIdDecimal": 176,
     "mapName": "COPYCATS_HOUSE_2F",
@@ -9553,7 +9553,7 @@
       }
     ]
   },
-  {
+  "177": {
     "mapIdHex": "0xB1",
     "mapIdDecimal": 177,
     "mapName": "FIGHTING_DOJO",
@@ -9611,7 +9611,7 @@
       }
     ]
   },
-  {
+  "178": {
     "mapIdHex": "0xB2",
     "mapIdDecimal": 178,
     "mapName": "SAFFRON_GYM",
@@ -9859,7 +9859,7 @@
       }
     ]
   },
-  {
+  "179": {
     "mapIdHex": "0xB3",
     "mapIdDecimal": 179,
     "mapName": "SAFFRON_PIDGEY_HOUSE",
@@ -9902,7 +9902,7 @@
       }
     ]
   },
-  {
+  "180": {
     "mapIdHex": "0xB4",
     "mapIdDecimal": 180,
     "mapName": "SAFFRON_MART",
@@ -9940,7 +9940,7 @@
       }
     ]
   },
-  {
+  "181": {
     "mapIdHex": "0xB5",
     "mapIdDecimal": 181,
     "mapName": "SILPH_CO_1F",
@@ -9986,7 +9986,7 @@
       }
     ]
   },
-  {
+  "182": {
     "mapIdHex": "0xB6",
     "mapIdDecimal": 182,
     "mapName": "SAFFRON_POKECENTER",
@@ -10029,7 +10029,7 @@
       }
     ]
   },
-  {
+  "183": {
     "mapIdHex": "0xB7",
     "mapIdDecimal": 183,
     "mapName": "MR_PSYCHICS_HOUSE",
@@ -10057,7 +10057,7 @@
       }
     ]
   },
-  {
+  "184": {
     "mapIdHex": "0xB8",
     "mapIdDecimal": 184,
     "mapName": "ROUTE_15_GATE_1F",
@@ -10103,7 +10103,7 @@
       }
     ]
   },
-  {
+  "185": {
     "mapIdHex": "0xB9",
     "mapIdDecimal": 185,
     "mapName": "ROUTE_15_GATE_2F",
@@ -10132,7 +10132,7 @@
       }
     ]
   },
-  {
+  "186": {
     "mapIdHex": "0xBA",
     "mapIdDecimal": 186,
     "mapName": "ROUTE_16_GATE_1F",
@@ -10207,7 +10207,7 @@
       }
     ]
   },
-  {
+  "187": {
     "mapIdHex": "0xBB",
     "mapIdDecimal": 187,
     "mapName": "ROUTE_16_GATE_2F",
@@ -10246,7 +10246,7 @@
       }
     ]
   },
-  {
+  "188": {
     "mapIdHex": "0xBC",
     "mapIdDecimal": 188,
     "mapName": "ROUTE_16_FLY_HOUSE",
@@ -10279,7 +10279,7 @@
       }
     ]
   },
-  {
+  "189": {
     "mapIdHex": "0xBD",
     "mapIdDecimal": 189,
     "mapName": "ROUTE_12_SUPER_ROD_HOUSE",
@@ -10307,7 +10307,7 @@
       }
     ]
   },
-  {
+  "190": {
     "mapIdHex": "0xBE",
     "mapIdDecimal": 190,
     "mapName": "ROUTE_18_GATE_1F",
@@ -10353,7 +10353,7 @@
       }
     ]
   },
-  {
+  "191": {
     "mapIdHex": "0xBF",
     "mapIdDecimal": 191,
     "mapName": "ROUTE_18_GATE_2F",
@@ -10387,7 +10387,7 @@
       }
     ]
   },
-  {
+  "192": {
     "mapIdHex": "0xC0",
     "mapIdDecimal": 192,
     "mapName": "SEAFOAM_ISLANDS_1F",
@@ -10450,7 +10450,7 @@
       }
     ]
   },
-  {
+  "193": {
     "mapIdHex": "0xC1",
     "mapIdDecimal": 193,
     "mapName": "ROUTE_22_GATE",
@@ -10490,7 +10490,7 @@
       }
     ]
   },
-  {
+  "194": {
     "mapIdHex": "0xC2",
     "mapIdDecimal": 194,
     "mapName": "VICTORY_ROAD_2F",
@@ -10608,7 +10608,7 @@
       }
     ]
   },
-  {
+  "195": {
     "mapIdHex": "0xC3",
     "mapIdDecimal": 195,
     "mapName": "ROUTE_12_GATE_2F",
@@ -10642,7 +10642,7 @@
       }
     ]
   },
-  {
+  "196": {
     "mapIdHex": "0xC4",
     "mapIdDecimal": 196,
     "mapName": "VERMILION_TRADE_HOUSE",
@@ -10670,7 +10670,7 @@
       }
     ]
   },
-  {
+  "197": {
     "mapIdHex": "0xC5",
     "mapIdDecimal": 197,
     "mapName": "DIGLETTS_CAVE",
@@ -10691,7 +10691,7 @@
       }
     ]
   },
-  {
+  "198": {
     "mapIdHex": "0xC6",
     "mapIdDecimal": 198,
     "mapName": "VICTORY_ROAD_3F",
@@ -10776,7 +10776,7 @@
       }
     ]
   },
-  {
+  "199": {
     "mapIdHex": "0xC7",
     "mapIdDecimal": 199,
     "mapName": "ROCKET_HIDEOUT_B1F",
@@ -10852,7 +10852,7 @@
       }
     ]
   },
-  {
+  "200": {
     "mapIdHex": "0xC8",
     "mapIdDecimal": 200,
     "mapName": "ROCKET_HIDEOUT_B2F",
@@ -10918,7 +10918,7 @@
       }
     ]
   },
-  {
+  "201": {
     "mapIdHex": "0xC9",
     "mapIdDecimal": 201,
     "mapName": "ROCKET_HIDEOUT_B3F",
@@ -10961,7 +10961,7 @@
       }
     ]
   },
-  {
+  "202": {
     "mapIdHex": "0xCA",
     "mapIdDecimal": 202,
     "mapName": "ROCKET_HIDEOUT_B4F",
@@ -11035,7 +11035,7 @@
       }
     ]
   },
-  {
+  "203": {
     "mapIdHex": "0xCB",
     "mapIdDecimal": 203,
     "mapName": "ROCKET_HIDEOUT_ELEVATOR",
@@ -11063,28 +11063,28 @@
       }
     ]
   },
-  {
+  "204": {
     "mapIdHex": "0xCC",
     "mapIdDecimal": 204,
     "mapName": "UNUSED_MAP_CC",
     "width": 0,
     "height": 0
   },
-  {
+  "205": {
     "mapIdHex": "0xCD",
     "mapIdDecimal": 205,
     "mapName": "UNUSED_MAP_CD",
     "width": 0,
     "height": 0
   },
-  {
+  "206": {
     "mapIdHex": "0xCE",
     "mapIdDecimal": 206,
     "mapName": "UNUSED_MAP_CE",
     "width": 0,
     "height": 0
   },
-  {
+  "207": {
     "mapIdHex": "0xCF",
     "mapIdDecimal": 207,
     "mapName": "SILPH_CO_2F",
@@ -11162,7 +11162,7 @@
       }
     ]
   },
-  {
+  "208": {
     "mapIdHex": "0xD0",
     "mapIdDecimal": 208,
     "mapName": "SILPH_CO_3F",
@@ -11253,7 +11253,7 @@
       }
     ]
   },
-  {
+  "209": {
     "mapIdHex": "0xD1",
     "mapIdDecimal": 209,
     "mapName": "SILPH_CO_4F",
@@ -11341,7 +11341,7 @@
       }
     ]
   },
-  {
+  "210": {
     "mapIdHex": "0xD2",
     "mapIdDecimal": 210,
     "mapName": "SILPH_CO_5F",
@@ -11449,7 +11449,7 @@
       }
     ]
   },
-  {
+  "211": {
     "mapIdHex": "0xD3",
     "mapIdDecimal": 211,
     "mapName": "SILPH_CO_6F",
@@ -11540,7 +11540,7 @@
       }
     ]
   },
-  {
+  "212": {
     "mapIdHex": "0xD4",
     "mapIdDecimal": 212,
     "mapName": "SILPH_CO_7F",
@@ -11642,7 +11642,7 @@
       }
     ]
   },
-  {
+  "213": {
     "mapIdHex": "0xD5",
     "mapIdDecimal": 213,
     "mapName": "SILPH_CO_8F",
@@ -11715,7 +11715,7 @@
       }
     ]
   },
-  {
+  "214": {
     "mapIdHex": "0xD6",
     "mapIdDecimal": 214,
     "mapName": "POKEMON_MANSION_2F",
@@ -11770,7 +11770,7 @@
       }
     ]
   },
-  {
+  "215": {
     "mapIdHex": "0xD7",
     "mapIdDecimal": 215,
     "mapName": "POKEMON_MANSION_3F",
@@ -11824,7 +11824,7 @@
       }
     ]
   },
-  {
+  "216": {
     "mapIdHex": "0xD8",
     "mapIdDecimal": 216,
     "mapName": "POKEMON_MANSION_B1F",
@@ -11881,7 +11881,7 @@
       }
     ]
   },
-  {
+  "217": {
     "mapIdHex": "0xD9",
     "mapIdDecimal": 217,
     "mapName": "SAFARI_ZONE_EAST",
@@ -11959,7 +11959,7 @@
       }
     ]
   },
-  {
+  "218": {
     "mapIdHex": "0xDA",
     "mapIdDecimal": 218,
     "mapName": "SAFARI_ZONE_NORTH",
@@ -12061,7 +12061,7 @@
       }
     ]
   },
-  {
+  "219": {
     "mapIdHex": "0xDB",
     "mapIdDecimal": 219,
     "mapName": "SAFARI_ZONE_WEST",
@@ -12162,7 +12162,7 @@
       }
     ]
   },
-  {
+  "220": {
     "mapIdHex": "0xDC",
     "mapIdDecimal": 220,
     "mapName": "SAFARI_ZONE_CENTER",
@@ -12244,7 +12244,7 @@
       }
     ]
   },
-  {
+  "221": {
     "mapIdHex": "0xDD",
     "mapIdDecimal": 221,
     "mapName": "SAFARI_ZONE_CENTER_REST_HOUSE",
@@ -12277,7 +12277,7 @@
       }
     ]
   },
-  {
+  "222": {
     "mapIdHex": "0xDE",
     "mapIdDecimal": 222,
     "mapName": "SAFARI_ZONE_SECRET_HOUSE",
@@ -12305,7 +12305,7 @@
       }
     ]
   },
-  {
+  "223": {
     "mapIdHex": "0xDF",
     "mapIdDecimal": 223,
     "mapName": "SAFARI_ZONE_WEST_REST_HOUSE",
@@ -12343,7 +12343,7 @@
       }
     ]
   },
-  {
+  "224": {
     "mapIdHex": "0xE0",
     "mapIdDecimal": 224,
     "mapName": "SAFARI_ZONE_EAST_REST_HOUSE",
@@ -12381,7 +12381,7 @@
       }
     ]
   },
-  {
+  "225": {
     "mapIdHex": "0xE1",
     "mapIdDecimal": 225,
     "mapName": "SAFARI_ZONE_NORTH_REST_HOUSE",
@@ -12419,7 +12419,7 @@
       }
     ]
   },
-  {
+  "226": {
     "mapIdHex": "0xE2",
     "mapIdDecimal": 226,
     "mapName": "CERULEAN_CAVE_2F",
@@ -12481,7 +12481,7 @@
       }
     ]
   },
-  {
+  "227": {
     "mapIdHex": "0xE3",
     "mapIdDecimal": 227,
     "mapName": "CERULEAN_CAVE_B1F",
@@ -12513,7 +12513,7 @@
       }
     ]
   },
-  {
+  "228": {
     "mapIdHex": "0xE4",
     "mapIdDecimal": 228,
     "mapName": "CERULEAN_CAVE_1F",
@@ -12593,7 +12593,7 @@
       }
     ]
   },
-  {
+  "229": {
     "mapIdHex": "0xE5",
     "mapIdDecimal": 229,
     "mapName": "NAME_RATERS_HOUSE",
@@ -12621,7 +12621,7 @@
       }
     ]
   },
-  {
+  "230": {
     "mapIdHex": "0xE6",
     "mapIdDecimal": 230,
     "mapName": "CERULEAN_BADGE_HOUSE",
@@ -12655,14 +12655,14 @@
       }
     ]
   },
-  {
+  "231": {
     "mapIdHex": "0xE7",
     "mapIdDecimal": 231,
     "mapName": "UNUSED_MAP_E7",
     "width": 0,
     "height": 0
   },
-  {
+  "232": {
     "mapIdHex": "0xE8",
     "mapIdDecimal": 232,
     "mapName": "ROCK_TUNNEL_B1F",
@@ -12737,7 +12737,7 @@
       }
     ]
   },
-  {
+  "233": {
     "mapIdHex": "0xE9",
     "mapIdDecimal": 233,
     "mapName": "SILPH_CO_9F",
@@ -12798,7 +12798,7 @@
       }
     ]
   },
-  {
+  "234": {
     "mapIdHex": "0xEA",
     "mapIdDecimal": 234,
     "mapName": "SILPH_CO_10F",
@@ -12875,7 +12875,7 @@
       }
     ]
   },
-  {
+  "235": {
     "mapIdHex": "0xEB",
     "mapIdDecimal": 235,
     "mapName": "SILPH_CO_11F",
@@ -12935,7 +12935,7 @@
       }
     ]
   },
-  {
+  "236": {
     "mapIdHex": "0xEC",
     "mapIdDecimal": 236,
     "mapName": "SILPH_CO_ELEVATOR",
@@ -12963,21 +12963,21 @@
       }
     ]
   },
-  {
+  "237": {
     "mapIdHex": "0xED",
     "mapIdDecimal": 237,
     "mapName": "UNUSED_MAP_ED",
     "width": 0,
     "height": 0
   },
-  {
+  "238": {
     "mapIdHex": "0xEE",
     "mapIdDecimal": 238,
     "mapName": "UNUSED_MAP_EE",
     "width": 0,
     "height": 0
   },
-  {
+  "239": {
     "mapIdHex": "0xEF",
     "mapIdDecimal": 239,
     "mapName": "TRADE_CENTER",
@@ -12992,7 +12992,7 @@
       }
     ]
   },
-  {
+  "240": {
     "mapIdHex": "0xF0",
     "mapIdDecimal": 240,
     "mapName": "COLOSSEUM",
@@ -13007,35 +13007,35 @@
       }
     ]
   },
-  {
+  "241": {
     "mapIdHex": "0xF1",
     "mapIdDecimal": 241,
     "mapName": "UNUSED_MAP_F1",
     "width": 0,
     "height": 0
   },
-  {
+  "242": {
     "mapIdHex": "0xF2",
     "mapIdDecimal": 242,
     "mapName": "UNUSED_MAP_F2",
     "width": 0,
     "height": 0
   },
-  {
+  "243": {
     "mapIdHex": "0xF3",
     "mapIdDecimal": 243,
     "mapName": "UNUSED_MAP_F3",
     "width": 0,
     "height": 0
   },
-  {
+  "244": {
     "mapIdHex": "0xF4",
     "mapIdDecimal": 244,
     "mapName": "UNUSED_MAP_F4",
     "width": 0,
     "height": 0
   },
-  {
+  "245": {
     "mapIdHex": "0xF5",
     "mapIdDecimal": 245,
     "mapName": "LORELEIS_ROOM",
@@ -13075,7 +13075,7 @@
       }
     ]
   },
-  {
+  "246": {
     "mapIdHex": "0xF6",
     "mapIdDecimal": 246,
     "mapName": "BRUNOS_ROOM",
@@ -13115,7 +13115,7 @@
       }
     ]
   },
-  {
+  "247": {
     "mapIdHex": "0xF7",
     "mapIdDecimal": 247,
     "mapName": "AGATHAS_ROOM",
@@ -13155,4 +13155,4 @@
       }
     ]
   }
-]
+}
