@@ -440,3 +440,33 @@ def take_screenshot() -> str:
         return f"Screenshot saved to {path}"
 
     return "Screenshot not available"
+@tool
+def navigate_around() -> str:
+    """
+    Use this when you didn't go through a wrap as expected. 
+    Moves the character in all adjacent directions and back to check for warps or interactive points.
+
+    Returns:
+        str: Status message
+    """
+    if not manager:
+        return "Error: no emulator"
+
+    directions = ["down", "up", "left", "right"]
+    opposite = {"down": "up", "up": "down", "left": "right", "right": "left"}
+    
+    state = manager.memory.get_game_state()
+    start_map = state.get("map_id")
+    
+    for d in directions:
+        manager.controls.move(d)
+        time.sleep(0.5)
+        
+        current_map = manager.memory.get_game_state().get("map_id")
+        if current_map != start_map:
+            return f"Warp detected! Moved to map {current_map} via {d}."
+            
+        manager.controls.move(opposite[d])
+        time.sleep(0.5)
+        
+    return "Navigation around complete. No map change detected."

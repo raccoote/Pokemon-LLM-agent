@@ -34,8 +34,7 @@ class PhaseManager:
         self.manager.controls.update_frame_count()
         self._iter += 1
 
-        if self._iter % 10 == 0:
-            self._log_ram_state()
+        pass
 
         phase = self.detector.detect_phase()
 
@@ -83,7 +82,6 @@ class PhaseManager:
 
         if phase == GamePhase.OVERWORLD or phase == GamePhase.BEDROOM:
 
-            self._log_ram_state()  # always log RAM before LLM planning
 
             action = self.overworld_agent.step(
                 self.manager,
@@ -96,21 +94,6 @@ class PhaseManager:
             return
 
         logger.warning(f"Unknown phase: {phase}")
-
-    def _log_ram_state(self):
-        """Log key RAM values occasionally."""
-        try:
-            with self.manager.lock:
-                mem = self.manager.pyboy.memory
-                logger.info(
-                    f"[RAM] "
-                    f"map={mem[self.manager.memory.get_addr('player.map_id')]:02X}  "
-                    f"pos=({mem[self.manager.memory.get_addr('player.x')]},{mem[self.manager.memory.get_addr('player.y')]})  "
-                    f"battle={mem[self.manager.memory.get_addr('battle.in_battle')]}  "
-                    f"party={mem[self.manager.memory.get_addr('party.count')]}"
-                )
-        except Exception as e:
-            logger.error(f"Failed to log RAM state: {e}")
 
     def _is_stuck(self):
 

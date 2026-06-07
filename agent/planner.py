@@ -15,7 +15,8 @@ from tools.pokemon_tools import (
     press_b,
     press_start,
     press_select,
-    navigate_to
+    navigate_to,
+    navigate_around
     # save_state,
     # load_state
 )
@@ -41,7 +42,8 @@ class Planner:
             press_b,
             press_start,
             press_select,
-            navigate_to
+            navigate_to,
+            navigate_around
             # save_state,
             # load_state
         ]
@@ -89,6 +91,11 @@ Task:
 2. Use your tools (up to 3 steps) to perform necessary actions (moving, talking, etc.).
 3. Once finished, provide your final conclusion using the JSON format specified above.
 """
+        
+        logger.info("=" * 60)
+        logger.info("[LLM REQUEST SENT]")
+        logger.info(prompt.strip())
+        logger.info("=" * 60)
 
         try:
             response = self.agent.run(prompt)
@@ -99,8 +106,10 @@ Task:
             # extract JSON safely (finding the last JSON-like block in case of chatter)
             matches = list(re.finditer(r"\{.*\}", cleaned, re.DOTALL))
             
+            logger.info(f"[LLM RAW RESPONSE]: {cleaned}")
+
             if not matches:
-                logger.error(f"No JSON found in LLM output. Raw response: {cleaned}")
+                logger.error(f"No JSON found in LLM output.")
                 # Use the raw response as analysis so the user/agent can see what happened
                 return {
                     "goal": "explore",
@@ -116,7 +125,12 @@ Task:
                 # High-visibility reasoning log
                 analysis = action.get("analysis", "No reasoning provided")
                 goal = action.get("goal", "explore")
-                logger.info(f"\n[LLM THINKING]\nReasoning: {analysis}\nDecision: {goal}\n")
+                
+                logger.info("\n" + "="*20 + " [LLM THINKING] " + "="*20)
+                logger.info(f"Reasoning: {analysis}")
+                logger.info(f"Decision: {goal}")
+                logger.info(f"Target: {action.get('target_location')}")
+                logger.info("=" * 60 + "\n")
 
                 return {
                     "goal": goal,
@@ -139,4 +153,3 @@ Task:
                 "analysis": f"Execution Error: {str(e)}",
                 "target_location": None
             }
-    
