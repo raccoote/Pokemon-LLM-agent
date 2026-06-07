@@ -67,24 +67,5 @@
         "got_starter": "0xD74B",
         "got_pokedex": "0xD74B",
         "delivered_parcel": "0xD74E"
-    },
-    "maps": {
-        "pallet_town": "0x00",
-        "viridian_city": "0x01",
-        "pewter_city": "0x02",
-        "cerulean_city": "0x03",
-        "lavender_town": "0x04",
-        "vermilion_city": "0x05",
-        "celadon_city": "0x06",
-        "fuchsia_city": "0x07",
-        "cinnabar_island": "0x08",
-        "indigo_plateau": "0x09",
-        "saffron_city": "0x0A",
-        "route_1": "0x0C",
-        "route_2": "0x0D",
-        "route_22": "0x21",
-        "viridian_forest": "0x33",
-        "pewter_gym": "0x36",
-        "cerulean_gym": "0x41"
     }
 }
