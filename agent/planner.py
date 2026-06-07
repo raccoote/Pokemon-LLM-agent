@@ -17,8 +17,7 @@ from tools.pokemon_tools import (
     press_select,
     navigate_to,
     save_state,
-    load_state,
-    take_screenshot
+    load_state
 )
 
 logger = logging.getLogger(__name__)
@@ -44,8 +43,7 @@ class Planner:
             press_select,
             navigate_to,
             save_state,
-            load_state,
-            take_screenshot
+            load_state
         ]
 
         # Load system instructions from file

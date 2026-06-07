@@ -23,7 +23,7 @@ RAM extraction
     ↓
 Structured game state
     ↓
-SmolAgents + Qwen2.5-3b
+SmolAgents + Qwen3.5-4b
     ↓
 Tool calls
     ↓
@@ -117,5 +117,6 @@ python main.py
 ```
 
 # References 
-Pokemon RED Rom and RAM map -> https://datacrystal.tcrf.net/wiki/Pok%C3%A9mon_Red_and_Blue
+Pokemon RED Rom and RAM map and docs-> https://datacrystal.tcrf.net/wiki/Pok%C3%A9mon_Red_and_Blue
+Pokemon RED disassembly -> https://github.com/pret/pokered
 fellow projects -> https://github.com/papercomputeco/pokemon and https://github.com/sidmohan0/tesserack

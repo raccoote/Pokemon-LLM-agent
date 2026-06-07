@@ -104,10 +104,10 @@ class PhaseManager:
                 mem = self.manager.pyboy.memory
                 logger.info(
                     f"[RAM] "
-                    f"map={mem[ADDR_MAP_ID]:02X}  "
-                    f"pos=({mem[ADDR_PLAYER_X]},{mem[ADDR_PLAYER_Y]})  "
-                    f"battle={mem[ADDR_IS_IN_BATTLE]}  "
-                    f"party={mem[ADDR_PARTY_SIZE]}"
+                    f"map={mem[self.manager.memory.get_addr('player.map_id')]:02X}  "
+                    f"pos=({mem[self.manager.memory.get_addr('player.x')]},{mem[self.manager.memory.get_addr('player.y')]})  "
+                    f"battle={mem[self.manager.memory.get_addr('battle.in_battle')]}  "
+                    f"party={mem[self.manager.memory.get_addr('party.count')]}"
                 )
         except Exception as e:
             logger.error(f"Failed to log RAM state: {e}")

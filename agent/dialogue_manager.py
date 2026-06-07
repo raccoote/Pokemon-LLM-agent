@@ -87,12 +87,12 @@ class DialogueManager:
     def _detect_dialogue_ram(self, ram_state) -> bool:
         """Heuristic for dialogue/textbox presence."""
         with self.manager.lock:
-            ram = self.manager.pyboy.memory
-            status_flags = ram[config.ADDR_WD730]
-            text_id = ram[config.ADDR_TEXTBOX_ID]
-            joy_ignore = ram[config.ADDR_JOY_IGNORE]
+            mem = self.manager.pyboy.memory
+            status_flags = mem[self.manager.memory.get_addr("engine.wd730")]
+            text_id = mem[self.manager.memory.get_addr("ui.textbox_id")]
+            joy_ignore = mem[self.manager.memory.get_addr("ui.joy_ignore")]
             # Extra check: 0xD358 often non-zero when textbox is open
-            textbox_open = ram[0xD358] > 0
+            textbox_open = mem[0xD358] > 0
             
         in_dialogue = (status_flags & 0x20) > 0
         movement_locked = (status_flags & 0x10) > 0

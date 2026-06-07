@@ -1488,3 +1488,1207 @@ Decision: explore
 2026-06-06 23:13:18,261 | INFO | agent.overworld_agent | OverworldAgent planning...
 2026-06-06 23:13:21,570 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
 2026-06-06 23:13:21,580 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:09:34,479 | INFO | PokemonAgent | Starting Pokémon Red Autonomous Agent
+2026-06-07 01:09:34,480 | INFO | emulator.pyboy_manager | Loading ROM: /home/demy/Documents/GitHub/Pokemon trainer MCP/pokemon_red.gb
+2026-06-07 01:09:34,480 | INFO | emulator.pyboy_manager | Initializing PyBoy | window=SDL2
+2026-06-07 01:09:34,952 | INFO | emulator.pyboy_manager | PyBoy initialized successfully
+2026-06-07 01:09:37,509 | INFO | PokemonAgent | Agent logic thread started
+2026-06-07 01:09:37,509 | INFO | PokemonAgent | Main thread now handling emulator window
+2026-06-07 01:09:37,570 | INFO | agent.phase_manager | PHASE TRANSITION: None -> GamePhase.TITLE
+2026-06-07 01:09:37,571 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:38,754 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:39,935 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:41,128 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:42,309 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:43,490 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:44,687 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:45,868 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:47,049 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:48,246 | INFO | agent.phase_manager | [RAM] map=00  pos=(0,0)  battle=0  party=0
+2026-06-07 01:09:48,247 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:49,428 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:50,609 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:51,797 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:09:52,978 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.TITLE -> GamePhase.DIALOGUE
+2026-06-07 01:09:52,978 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:52,979 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:53,660 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:53,661 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:54,357 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:54,358 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:55,039 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:55,039 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:55,720 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:55,720 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:56,402 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:56,402 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:57,112 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:09:57,112 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:57,112 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:57,793 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:57,793 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:58,474 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:58,475 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:59,155 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:59,156 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:09:59,845 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:09:59,845 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:00,526 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:00,526 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:01,207 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:01,207 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:01,897 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:01,898 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:02,592 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:02,592 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:03,278 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:03,278 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:03,960 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:03,960 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:03,961 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:04,648 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:04,649 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:05,330 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:05,330 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:06,029 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:06,029 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:06,727 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:06,728 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:07,408 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:07,409 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:08,090 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:08,090 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:08,779 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:08,780 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:09,460 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:09,461 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:10,142 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:10,142 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:10,825 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:10,825 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:10,825 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:11,506 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:11,506 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:12,187 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:12,188 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:12,868 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:12,869 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:13,564 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:13,565 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:14,249 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:14,249 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:14,961 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:14,962 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:15,642 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:15,643 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:16,330 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:16,330 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:17,031 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:17,031 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:17,714 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:17,715 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:17,715 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:18,396 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:18,396 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:19,111 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.DIALOGUE -> GamePhase.NAME_SELECTION
+2026-06-07 01:10:19,112 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:19,112 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:19,793 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:19,794 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:20,493 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:20,493 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:21,175 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:21,175 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:21,856 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:21,856 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:22,537 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:22,537 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:23,229 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:23,230 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:23,927 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:23,928 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:24,609 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:24,609 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:24,609 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:25,298 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:25,298 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:25,979 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:25,980 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:26,677 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:26,677 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:27,378 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:27,378 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:28,059 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:28,060 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:28,740 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:28,741 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:29,421 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:29,422 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:30,115 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:30,115 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:30,796 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:30,796 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:31,478 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:31,478 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:31,478 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:32,179 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:32,179 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:32,859 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:32,860 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:33,540 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:33,541 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:34,224 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:34,224 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:34,914 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:34,914 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:35,611 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:35,612 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:36,298 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.NAME_SELECTION -> GamePhase.DIALOGUE
+2026-06-07 01:10:36,298 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:36,298 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:36,980 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:10:36,981 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:37,664 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.DIALOGUE -> GamePhase.NAME_SELECTION
+2026-06-07 01:10:37,664 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:37,664 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:38,363 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:38,364 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:38,364 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:39,045 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:39,045 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:39,730 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:39,730 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:40,428 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:40,428 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:41,109 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:41,109 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:41,796 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:41,796 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:42,477 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:42,477 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:43,163 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:43,164 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:43,844 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:43,845 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:44,543 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:44,543 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:45,227 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:45,227 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:45,228 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:45,927 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:45,927 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:46,608 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:46,609 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:47,299 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:47,299 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:47,997 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:47,998 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:48,678 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:48,679 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:49,364 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:49,364 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:50,060 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:50,061 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:50,741 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:50,741 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:51,422 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:51,422 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:52,103 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:52,103 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:52,104 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:52,784 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:52,785 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:53,465 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:53,466 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:54,149 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:54,149 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:54,831 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:54,831 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:55,543 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:55,544 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:56,224 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:56,225 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:56,914 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:56,915 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:57,595 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:57,596 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:58,276 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:58,277 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:58,960 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:10:58,961 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:58,961 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:10:59,643 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:10:59,643 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:11:00,336 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.NAME_SELECTION -> GamePhase.OVERWORLD
+2026-06-07 01:11:00,336 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:11:00,336 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:04,255 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:04,304 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:11:09,108 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:09,111 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (3, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:11:09,112 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:11:09,533 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:11:09,533 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:12,764 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:12,765 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:11:18,088 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:18,091 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:11:18,091 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:11:18,511 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:11:18,512 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:21,747 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:21,748 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:11:27,059 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:27,062 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:11:27,062 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:11:27,496 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:11:27,497 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:30,697 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:30,699 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:11:36,043 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:36,046 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:11:36,046 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:11:36,477 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:11:36,477 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:39,611 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:39,612 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:11:45,003 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:45,006 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:11:45,006 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:11:45,006 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=116, last=113, required=15)
+2026-06-07 01:11:45,110 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:11:45,110 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:48,243 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:48,244 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:11:53,577 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:53,580 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:11:53,580 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:11:53,580 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=117, last=113, required=15)
+2026-06-07 01:11:53,680 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:11:53,680 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:11:56,658 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:11:56,661 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:01,948 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:01,952 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:01,952 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:01,952 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=118, last=114, required=15)
+2026-06-07 01:12:02,052 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:02,052 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:05,059 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:05,077 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:10,448 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:10,451 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:10,451 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:10,451 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=119, last=113, required=15)
+2026-06-07 01:12:10,559 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:10,559 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:10,559 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:10,559 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:12:13,552 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:13,571 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:18,839 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:18,842 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:18,843 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:18,843 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=120, last=115, required=15)
+2026-06-07 01:12:18,943 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:18,943 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:18,943 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:12:22,188 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:22,190 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:27,701 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:27,705 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:27,705 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:27,705 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=121, last=113, required=15)
+2026-06-07 01:12:27,806 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:27,806 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:27,806 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:12:30,774 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:30,776 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:36,108 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:36,113 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:36,113 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:36,113 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=122, last=114, required=15)
+2026-06-07 01:12:36,213 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:36,213 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:36,213 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:12:39,378 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:39,380 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:44,664 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:44,669 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:44,669 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:44,669 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=123, last=114, required=15)
+2026-06-07 01:12:44,769 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:44,769 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:44,769 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:12:48,011 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:48,027 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:53,313 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:53,318 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game state. Starting at position (4, 6), I should navigate toward a Pokémon Gym or town to begin earning badges and progressing. Let me move up to see what's available in this area.
+2026-06-07 01:12:53,318 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:12:53,318 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=124, last=114, required=15)
+2026-06-07 01:12:53,424 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:12:53,424 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:12:53,425 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:12:56,602 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:56,603 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:12:59,640 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:12:59,641 | ERROR | emulator.screenshots | Failed to capture screenshot: 'pyboy.pyboy.PyBoy' object has no attribute 'screen_image'
+2026-06-07 01:14:19,880 | INFO | PokemonAgent | Starting Pokémon Red Autonomous Agent
+2026-06-07 01:14:19,880 | INFO | emulator.pyboy_manager | Loading ROM: /home/demy/Documents/GitHub/Pokemon trainer MCP/pokemon_red.gb
+2026-06-07 01:14:19,880 | INFO | emulator.pyboy_manager | Initializing PyBoy | window=SDL2
+2026-06-07 01:14:20,064 | INFO | emulator.pyboy_manager | PyBoy initialized successfully
+2026-06-07 01:14:20,938 | INFO | PokemonAgent | Agent logic thread started
+2026-06-07 01:14:20,938 | INFO | PokemonAgent | Main thread now handling emulator window
+2026-06-07 01:14:20,956 | INFO | agent.phase_manager | PHASE TRANSITION: None -> GamePhase.TITLE
+2026-06-07 01:14:20,956 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:22,137 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:23,346 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:24,527 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:25,708 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:26,889 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:28,070 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:29,257 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:30,444 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:31,625 | INFO | agent.phase_manager | [RAM] map=00  pos=(0,0)  battle=0  party=0
+2026-06-07 01:14:31,625 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:32,817 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:33,998 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:35,179 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 01:14:36,360 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.TITLE -> GamePhase.DIALOGUE
+2026-06-07 01:14:36,361 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:36,361 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:37,061 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:37,062 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:37,751 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:37,752 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:38,432 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:38,433 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:39,119 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:39,119 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:39,800 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:39,800 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:40,485 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:14:40,486 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:40,486 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:41,180 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:41,180 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:41,861 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:41,861 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:42,549 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:42,549 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:43,231 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:43,231 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:43,913 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:43,914 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:44,594 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:44,595 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:45,276 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:45,276 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:45,966 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:45,967 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:46,648 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:46,648 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:47,329 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:14:47,330 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:47,330 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:48,011 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:48,011 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:48,692 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:48,693 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:49,380 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:49,381 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:50,097 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:50,097 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:50,780 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:50,781 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:51,462 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:51,462 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:52,154 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:52,155 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:52,849 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:52,850 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:53,548 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:53,548 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:54,229 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:14:54,229 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:54,230 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:54,922 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:54,922 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:55,603 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:55,603 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:56,284 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:56,285 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:56,965 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:56,966 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:57,646 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:57,647 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:58,328 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:58,328 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:59,029 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:59,030 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:14:59,710 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:14:59,711 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:00,393 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:15:00,393 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:01,081 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:01,082 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:15:01,082 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:01,764 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:15:01,765 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:02,446 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.DIALOGUE -> GamePhase.NAME_SELECTION
+2026-06-07 01:15:02,446 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:02,446 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:03,129 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:03,129 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:03,813 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:03,813 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:04,494 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:04,495 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:05,183 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:05,184 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:05,869 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:05,869 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:06,567 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:06,568 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:07,250 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:07,250 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:07,932 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:07,932 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:07,933 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:08,613 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:08,614 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:09,314 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:09,315 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:09,995 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:09,996 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:10,677 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:10,677 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:11,358 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:11,359 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:12,039 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:12,040 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:12,721 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:12,721 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:13,402 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:13,402 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:14,114 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:14,114 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:14,795 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:14,795 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:14,795 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:15,484 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:15,484 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:16,165 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:16,165 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:16,865 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:16,866 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:17,546 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:17,547 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:18,228 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:18,228 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:18,909 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:18,909 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:19,596 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.NAME_SELECTION -> GamePhase.DIALOGUE
+2026-06-07 01:15:19,597 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:15:19,597 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:20,278 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 01:15:20,278 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:20,960 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.DIALOGUE -> GamePhase.NAME_SELECTION
+2026-06-07 01:15:20,960 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:20,961 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:21,647 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:21,647 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:21,647 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:22,336 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:22,336 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:23,031 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:23,032 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:23,712 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:23,713 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:24,400 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:24,400 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:25,084 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:25,085 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:25,780 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:25,780 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:26,461 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:26,461 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:27,142 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:27,143 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:27,826 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:27,827 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:28,516 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:28,517 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:28,517 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:29,200 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:29,200 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:29,881 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:29,882 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:30,581 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:30,581 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:31,263 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:31,264 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:31,963 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:31,963 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:32,652 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:32,652 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:33,334 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:33,334 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:34,016 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:34,016 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:34,730 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:34,731 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:35,412 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:35,412 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:35,412 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:36,093 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:36,093 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:36,780 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:36,781 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:37,467 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:37,468 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:38,149 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:38,150 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:38,866 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:38,866 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:39,548 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:39,549 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:40,229 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:40,231 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:40,912 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:40,912 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:41,593 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:41,593 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:42,274 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:42,274 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:42,274 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:42,955 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 01:15:42,956 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 01:15:43,638 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.NAME_SELECTION -> GamePhase.OVERWORLD
+2026-06-07 01:15:43,638 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:15:43,638 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:15:55,255 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:15:55,373 | INFO | emulator.pyboy_manager | Saved state: saves/state_0.state
+2026-06-07 01:15:58,549 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:03,845 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:03,848 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to start exploring the map. The player is at position (3, 6). I should move up first to see what's available in this area and find a Gym or other objectives.
+2026-06-07 01:16:03,849 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:16:04,282 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:16:04,282 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:16:07,461 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:13,692 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:13,696 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from position (3, 6). Now I'm at a new location. I need to continue exploring the map and find Pokémon Gyms to earn badges. My goal is to explore the area and look for Gym locations or other objectives.
+2026-06-07 01:16:13,696 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:16:14,120 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:16:14,121 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:16:17,265 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:17,266 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=114, last=113, required=15)
+2026-06-07 01:16:22,971 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:26,162 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:26,163 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=114, last=113, required=15)
+2026-06-07 01:16:34,645 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:34,647 | ERROR | agent.planner | JSON parse failed for: {
+  "goal": "explore",
+  "analysis": "Current position is at player_x=4, player_y=5 on map_id 38. The previous move attempt failed due to a parsing error in the tool call structure (likely an empty arguments object). I need to retry moving up from this location to progress toward potential Gym locations or other objectives.",
+  "target_location": {"x": 4, "y": 5}
+2026-06-07 01:16:34,647 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:16:34,647 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=114, last=113, required=15)
+2026-06-07 01:16:34,747 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:16:34,747 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:16:45,466 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:45,468 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=115, last=113, required=15)
+2026-06-07 01:16:51,377 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:51,380 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from position (4, 5) on map_id 38. The observation shows "up" which indicates the move was successful. I need to continue exploring the overworld to find Pokémon Gyms and battle leaders. My current objective is to explore the area around player_x=4, player_y=5 to locate potential Gym locations.
+2026-06-07 01:16:51,380 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:16:51,380 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=115, last=112, required=15)
+2026-06-07 01:16:51,481 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:16:51,481 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:16:53,997 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:53,998 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=116, last=113, required=15)
+2026-06-07 01:16:59,929 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:16:59,933 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from position (4, 5) on map_id 38. The observation shows "up" which indicates the move was successful. I need to continue exploring the overworld to find Pokémon Gyms and battle leaders. My current objective is to explore the area around player_x=4, player_y=5 to locate potential Gym locations.
+2026-06-07 01:16:59,933 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:16:59,933 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=116, last=113, required=15)
+2026-06-07 01:17:00,033 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:17:00,033 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:17:02,637 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:02,638 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=117, last=113, required=15)
+2026-06-07 01:17:08,510 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:08,513 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from position (4, 5) on map_id 38. The observation shows "up" which indicates the move was successful. I need to continue exploring the overworld to find Pokémon Gyms and battle leaders. My current objective is to explore the area around player_x=4, player_y=5 to locate potential Gym locations.
+2026-06-07 01:17:08,514 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:17:08,514 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=117, last=113, required=15)
+2026-06-07 01:17:08,614 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:17:08,614 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:17:11,148 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:11,150 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=118, last=113, required=15)
+2026-06-07 01:17:16,952 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:16,955 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from position (4, 5) on map_id 38. The observation shows "up" which indicates the move was successful. I need to continue exploring the overworld to find Pokémon Gyms and battle leaders. My current objective is to explore the area around player_x=4, player_y=5 to locate potential Gym locations.
+2026-06-07 01:17:16,955 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:17:16,955 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=118, last=113, required=15)
+2026-06-07 01:17:17,055 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,5)  battle=0  party=0
+2026-06-07 01:17:17,056 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:17:17,056 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:17:19,616 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:19,618 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=119, last=113, required=15)
+2026-06-07 01:17:25,337 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:28,025 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:28,027 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=119, last=113, required=15)
+2026-06-07 01:17:38,472 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:38,474 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: The agent is stuck in a loop at position (4, 5) on map_id 38 after multiple 'up' moves. The observation confirms movement was successful but the state data remains unchanged, indicating no new information or progress was gained. To break this cycle and make continuous progress toward finding Gym Leaders for badges, I must move to an adjacent area where a Gym might be located. Based on standard map layouts in Pokémon Red, moving right (x+1) is a logical next step to explore the surrounding area.
+Decision: explore
+
+2026-06-07 01:17:38,474 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:17:38,903 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:17:38,904 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:17:38,904 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:17:38,904 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:17:50,164 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:50,166 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=120, last=112, required=15)
+2026-06-07 01:17:55,639 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:55,642 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved right from (4, 5) to (5, 5). The observation confirms movement was successful. I need to continue exploring the area to find a Gym and its leader for badges. Based on standard Pokémon Red map layouts, there should be a Gym nearby that I can access.
+2026-06-07 01:17:55,642 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:17:55,642 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=120, last=112, required=15)
+2026-06-07 01:17:55,742 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:17:55,742 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:17:55,742 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:17:58,095 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:17:58,097 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=121, last=112, required=15)
+2026-06-07 01:18:00,357 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:00,359 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=121, last=112, required=15)
+2026-06-07 01:18:02,859 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:02,861 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=121, last=112, required=15)
+2026-06-07 01:18:12,334 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:12,336 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: The agent has been stuck in a loop moving right from position (4,6) to (5,5). To break this cycle and make progress toward finding a Gym or new areas, the agent must move away from the current area. Moving left is the logical next step to explore different terrain types (grass vs water) and potentially encounter wild Pokémon for experience points.
+Decision: explore
+
+2026-06-07 01:18:12,336 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:18:12,336 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=121, last=119, required=15)
+2026-06-07 01:18:12,436 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:18:12,436 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:18:12,436 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:18:22,937 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:22,939 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=122, last=113, required=15)
+2026-06-07 01:18:27,909 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:27,912 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent has moved left from position (4,6) to (3,6). This breaks the loop and allows exploration of new terrain. The next step should be to continue moving or look for a Gym to explore.
+2026-06-07 01:18:27,912 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:18:27,912 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=122, last=113, required=15)
+2026-06-07 01:18:28,012 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:18:28,013 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:18:28,013 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:18:30,394 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:30,396 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=123, last=112, required=15)
+2026-06-07 01:18:34,526 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:34,529 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent moved right from (4,6) to (5,6). Continuing exploration toward the east side of the map.
+2026-06-07 01:18:34,529 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:18:34,529 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=123, last=113, required=15)
+2026-06-07 01:18:34,629 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:18:34,629 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:18:34,629 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:18:36,972 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:36,973 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=124, last=112, required=15)
+2026-06-07 01:18:39,181 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:39,182 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=124, last=112, required=15)
+2026-06-07 01:18:41,615 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:41,617 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=124, last=112, required=15)
+2026-06-07 01:18:50,195 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:18:50,197 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: The agent has been stuck in a loop moving right from (4,6) to (5,6). To break this cycle and make progress, I need to change direction immediately. Moving left will take me away from the current area, allowing me to explore new terrain or encounter different obstacles that might lead toward Gym locations.
+Decision: explore
+
+2026-06-07 01:18:50,197 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:18:50,197 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=124, last=119, required=15)
+2026-06-07 01:18:50,297 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:18:50,297 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:18:50,297 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:19:00,941 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:00,942 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=125, last=113, required=15)
+2026-06-07 01:19:06,413 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:06,416 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved left from (4,6) to (-1,6). Now I need to continue exploring the area. The goal is to find a Gym and defeat its leader to earn badges for progress. I should look around this new location for any signs of Gyms or other objectives.
+2026-06-07 01:19:06,416 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:19:06,416 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=125, last=112, required=15)
+2026-06-07 01:19:06,525 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:19:06,525 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:19:06,525 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:19:09,051 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:09,053 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=126, last=113, required=15)
+2026-06-07 01:19:14,277 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:14,280 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved left from (4,6) to (-1,6). Now I need to continue exploring the area. The goal is to find a Gym and defeat its leader to earn badges for progress. I should look around this new location for any signs of Gyms or other objectives.
+2026-06-07 01:19:14,280 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:19:14,280 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=126, last=113, required=15)
+2026-06-07 01:19:14,381 | INFO | agent.phase_manager | [RAM] map=26  pos=(4,6)  battle=0  party=0
+2026-06-07 01:19:14,381 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:19:14,381 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:19:16,866 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:16,868 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=127, last=113, required=15)
+2026-06-07 01:19:19,265 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:22,401 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:22,403 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=127, last=113, required=15)
+2026-06-07 01:19:32,020 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:32,022 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: The agent is stuck in a loop at position (-1,6) after moving left from (4,6). To break this cycle and make progress toward finding Gyms or new towns, the agent must move to an adjacent area that has not been visited. The current state shows no Gym found yet. Moving right to (-1,5) is a logical step to explore the immediate vicinity of the previous location.
+Decision: explore
+
+2026-06-07 01:19:32,022 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:19:32,022 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=127, last=113, required=15)
+2026-06-07 01:19:32,124 | INFO | agent.phase_manager | [RAM] map=26  pos=(5,6)  battle=0  party=0
+2026-06-07 01:19:32,124 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:19:32,124 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:19:43,796 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:43,827 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:19:49,958 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:49,961 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6). To break this cycle and make progress toward finding Gyms or new towns, the agent must move to an adjacent area that has not been visited. The current state shows no Gym found yet. Moving right to (-1,5) is a logical step to explore the immediate vicinity of the previous location.
+2026-06-07 01:19:49,961 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:19:49,961 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=128, last=127, required=15)
+2026-06-07 01:19:50,061 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:19:50,061 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:19:50,062 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:19:52,498 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:52,499 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=129, last=127, required=15)
+2026-06-07 01:19:58,759 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:19:58,763 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6). To break this cycle and make progress toward finding Gyms or new towns, the agent must move to an adjacent area that has not been visited. The current state shows no Gym found yet. Moving right to (-1,5) is a logical step to explore the immediate vicinity of the previous location.
+2026-06-07 01:19:58,763 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:19:58,763 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=129, last=127, required=15)
+2026-06-07 01:19:58,863 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:19:58,863 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:19:58,863 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:19:58,863 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:20:01,346 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:01,348 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=130, last=127, required=15)
+2026-06-07 01:20:07,324 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:07,328 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6). To break this cycle and make progress toward finding Gyms or new towns, the agent must move to an adjacent area that has not been visited. The current state shows no Gym found yet. Moving right to (-1,5) is a logical step to explore the immediate vicinity of the previous location.
+2026-06-07 01:20:07,328 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:20:07,328 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=130, last=119, required=15)
+2026-06-07 01:20:07,443 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:20:07,443 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:20:07,444 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:20:09,966 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:09,967 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=131, last=127, required=15)
+2026-06-07 01:20:15,152 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:17,793 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:17,794 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=131, last=127, required=15)
+2026-06-07 01:20:28,148 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:28,150 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: The agent is stuck in a loop at position (-1,6). The previous move attempt to (-1,5) failed due to an error parsing tool output (likely a syntax issue with the JSON structure of the function call), causing the session state to reset or fail. To break this cycle and make progress, I must retry moving right from the current position (-1,6) to (-1,5). This is a necessary step to escape the loop and begin exploring the immediate vicinity.
+Decision: explore
+
+2026-06-07 01:20:28,150 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:20:28,150 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=131, last=127, required=15)
+2026-06-07 01:20:28,251 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:20:28,251 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:20:28,251 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:20:39,265 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:39,266 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=132, last=127, required=15)
+2026-06-07 01:20:46,347 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:46,352 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6). The previous move attempt to (-1,5) failed due to an error parsing tool output (likely a syntax issue with the JSON structure of the function call), causing the session state to reset or fail. To break this cycle and make progress, I must retry moving right from the current position (-1,6) to (-1,5). This is a necessary step to escape the loop and begin exploring the immediate vicinity.
+2026-06-07 01:20:46,352 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:20:46,785 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:20:46,786 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:20:46,786 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:20:49,300 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:49,301 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=133, last=127, required=15)
+2026-06-07 01:20:56,323 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:59,026 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:20:59,027 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=133, last=127, required=15)
+2026-06-07 01:21:08,395 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:08,397 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors (likely syntax issues with JSON parsing). The current state shows player_x=3 and player_y=6. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+Decision: explore
+
+2026-06-07 01:21:08,398 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:21:08,843 | INFO | agent.phase_manager | [RAM] map=26  pos=(2,6)  battle=0  party=0
+2026-06-07 01:21:08,843 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:21:08,844 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:21:20,242 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:20,273 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:21:26,432 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:26,435 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors (likely syntax issues with JSON parsing). The current state shows player_x=3 and player_y=6. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:21:26,435 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:21:26,861 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,7)  battle=0  party=0
+2026-06-07 01:21:26,862 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:21:26,862 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:21:29,933 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:29,949 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:21:35,609 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:35,612 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:21:35,612 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:21:35,612 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=135, last=134, required=15)
+2026-06-07 01:21:35,712 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:21:35,712 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:21:35,712 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:21:38,599 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:38,611 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:21:44,090 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:44,093 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:21:44,093 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:21:44,093 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=136, last=127, required=15)
+2026-06-07 01:21:44,193 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:21:44,194 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:21:44,194 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:21:46,998 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:47,010 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:21:52,539 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:52,542 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:21:52,543 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:21:52,543 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=137, last=132, required=15)
+2026-06-07 01:21:52,643 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:21:52,643 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:21:52,643 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:21:55,437 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:21:55,449 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:22:00,938 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:00,941 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:22:00,941 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:22:00,941 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=138, last=133, required=15)
+2026-06-07 01:22:01,041 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:22:01,041 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:22:01,041 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:22:04,120 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:04,132 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:22:09,705 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:09,709 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:22:09,709 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:22:09,709 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=139, last=134, required=15)
+2026-06-07 01:22:09,809 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:22:09,810 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:22:09,810 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:22:09,810 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:22:12,597 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:12,614 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:22:17,996 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:17,999 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:22:17,999 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:22:17,999 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=140, last=132, required=15)
+2026-06-07 01:22:18,108 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:22:18,108 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:22:18,109 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:22:21,122 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:21,143 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 01:22:26,579 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:26,582 | ERROR | agent.planner | No JSON found in LLM output. Raw response: The agent is stuck in a loop at position (-1,6) due to previous tool execution errors. The current state shows player_x=3 and player_y=7. To break the loop and make progress, I must move right from the current position to escape the immediate area where the error occurred.
+2026-06-07 01:22:26,582 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 01:22:26,582 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=141, last=134, required=15)
+2026-06-07 01:22:26,690 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 01:22:26,690 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 01:22:26,690 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 01:22:29,717 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 01:22:29,729 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 03:00:48,414 | INFO | PokemonAgent | Starting Pokémon Red Autonomous Agent
+2026-06-07 03:00:48,414 | INFO | emulator.pyboy_manager | Loading ROM: /home/demy/Documents/GitHub/Pokemon trainer MCP/pokemon_red.gb
+2026-06-07 03:00:48,414 | INFO | emulator.pyboy_manager | Initializing PyBoy | window=SDL2
+2026-06-07 03:00:48,639 | INFO | emulator.pyboy_manager | PyBoy initialized successfully
+2026-06-07 03:00:49,575 | INFO | PokemonAgent | Agent logic thread started
+2026-06-07 03:00:49,575 | INFO | PokemonAgent | Main thread now handling emulator window
+2026-06-07 03:00:49,591 | INFO | agent.phase_manager | PHASE TRANSITION: None -> GamePhase.TITLE
+2026-06-07 03:00:49,591 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:50,774 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:51,966 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:53,147 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:54,328 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:55,519 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:56,700 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:57,880 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:00:59,061 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:01:00,252 | INFO | agent.phase_manager | [RAM] map=00  pos=(0,0)  battle=0  party=0
+2026-06-07 03:01:00,253 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:01:01,437 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:01:02,618 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:01:03,819 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.TITLE
+2026-06-07 03:01:05,000 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.TITLE -> GamePhase.DIALOGUE
+2026-06-07 03:01:05,000 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:05,000 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:05,717 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:05,717 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:06,402 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:06,403 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:07,084 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:07,084 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:07,769 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:07,769 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:08,483 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:08,483 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:09,164 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:09,165 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:09,167 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:09,850 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:09,851 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:10,549 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:10,550 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:11,231 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:11,231 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:11,912 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:11,912 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:12,598 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:12,598 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:13,285 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:13,285 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:13,966 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:13,966 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:14,647 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:14,647 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:15,333 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:15,333 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:16,014 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:16,015 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:16,015 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:16,701 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:16,701 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:17,382 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:17,382 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:18,081 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:18,081 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:18,771 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:18,771 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:19,452 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:19,452 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:20,133 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:20,133 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:20,822 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:20,822 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:21,503 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:21,504 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:22,199 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:22,199 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:22,881 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:22,881 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:22,881 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:23,568 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:23,569 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:24,266 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:24,267 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:24,951 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:24,951 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:25,632 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:25,632 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:26,313 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:26,314 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:27,000 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:27,000 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:27,688 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:27,689 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:28,371 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:28,372 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:29,068 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:29,069 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:29,749 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:29,750 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:29,750 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:30,436 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.DIALOGUE -> GamePhase.NAME_SELECTION
+2026-06-07 03:01:30,436 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:30,436 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:31,132 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:31,132 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:31,816 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:31,816 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:32,497 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:32,498 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:33,179 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:33,180 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:33,860 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:33,861 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:34,549 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:34,549 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:35,231 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:35,231 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:35,933 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:35,933 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:36,614 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:36,615 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:36,615 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:37,296 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:37,296 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:37,977 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:37,977 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:38,659 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:38,659 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:39,341 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:39,342 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:40,022 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:40,023 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:40,720 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:40,720 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:41,401 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:41,402 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:42,082 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:42,083 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:42,771 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:42,772 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:43,452 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:43,453 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:43,453 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:44,141 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:44,141 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:44,825 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:44,825 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:45,524 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:45,525 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:46,206 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:46,206 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:46,908 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:46,908 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:47,592 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:47,593 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:48,273 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.NAME_SELECTION -> GamePhase.DIALOGUE
+2026-06-07 03:01:48,274 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:48,274 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:48,955 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.DIALOGUE
+2026-06-07 03:01:48,955 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:49,638 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.DIALOGUE -> GamePhase.NAME_SELECTION
+2026-06-07 03:01:49,638 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:49,638 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:50,336 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:50,336 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:50,337 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:51,018 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:51,018 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:51,699 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:51,699 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:52,406 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:52,406 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:53,087 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:53,087 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:53,772 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:53,772 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:54,458 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:54,458 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:55,153 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:55,153 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:55,844 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:55,844 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:56,536 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:56,536 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:57,217 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:01:57,217 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:57,218 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:57,905 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:57,906 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:58,587 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:58,587 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:59,288 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:59,288 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:01:59,971 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:01:59,971 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:00,671 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:00,671 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:01,352 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:01,353 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:02,057 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:02,057 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:02,738 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:02,738 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:03,436 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:03,436 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:04,117 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:02:04,118 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:04,118 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:04,805 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:04,805 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:05,486 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:05,486 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:06,174 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:06,174 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:06,855 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:06,855 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:07,570 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:07,570 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:08,251 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:08,252 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:08,937 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:08,938 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:09,621 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:09,621 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:10,307 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:10,307 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:10,988 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:02:10,989 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:10,989 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:11,688 | INFO | agent.startup_sequence | Startup Handler: Processing GamePhase.NAME_SELECTION
+2026-06-07 03:02:11,688 | INFO | agent.startup_sequence | Dialogue progression -> A
+2026-06-07 03:02:12,369 | INFO | agent.phase_manager | PHASE TRANSITION: GamePhase.NAME_SELECTION -> GamePhase.OVERWORLD
+2026-06-07 03:02:12,370 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:02:12,370 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:02:15,704 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:15,768 | INFO | emulator.pyboy_manager | Saved state: saves/state_0.state
+2026-06-07 03:02:18,174 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:22,476 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:22,479 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the game world. Starting at position (3,6), I should move upward to find a Gym or town. Let me press up to navigate toward potential locations like Oak Lab or Pokemart.
+2026-06-07 03:02:22,479 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:02:22,916 | INFO | agent.phase_manager | [RAM] map=26  pos=(2,6)  battle=0  party=0
+2026-06-07 03:02:22,916 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:02:25,490 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:30,939 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:30,941 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from position (2,6). Now at (1,6), I should continue exploring upward to find a Gym or town. Pressing up again will move me toward potential locations like Oak Lab or Pokemart.
+2026-06-07 03:02:30,942 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:02:31,362 | INFO | agent.phase_manager | [RAM] map=26  pos=(2,5)  battle=0  party=0
+2026-06-07 03:02:31,363 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:02:33,887 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:33,888 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=114, last=113, required=15)
+2026-06-07 03:02:38,692 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:38,695 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from (2,6) to (1,6). Continuing upward toward potential locations like Oak Lab or Pokemart. Pressing up again will move me toward potential locations like Oak Lab or Pokemart.
+2026-06-07 03:02:38,695 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:02:39,116 | INFO | agent.phase_manager | [RAM] map=26  pos=(2,6)  battle=0  party=0
+2026-06-07 03:02:39,117 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:02:41,977 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:41,990 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state
+2026-06-07 03:02:46,700 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:46,703 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I need to explore the map. Starting at (2,6), I should move up to find potential locations like Oak Lab or Pokemart. Pressing up will take me toward these areas.
+2026-06-07 03:02:46,704 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:02:46,704 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=115, last=114, required=15)
+2026-06-07 03:02:46,804 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:02:46,804 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:02:49,142 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:49,144 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=116, last=113, required=15)
+2026-06-07 03:02:53,886 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:53,890 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from (2,6) to (1,6). The map is still unknown. I need to continue exploring to find the Oak Lab or Pokemart. Pressing up again should take me toward these locations.
+2026-06-07 03:02:53,890 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:02:53,890 | WARNING | emulator.controls | InputManager: down blocked by cooldown (frame=116, last=114, required=15)
+2026-06-07 03:02:53,990 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:02:53,990 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:02:56,289 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:02:56,291 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=117, last=113, required=15)
+2026-06-07 03:03:00,941 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:03,481 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:03,482 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=117, last=113, required=15)
+2026-06-07 03:03:12,546 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:12,548 | INFO | agent.planner | 
+[LLM THINKING]
+Reasoning: Current position is at player_x=3, player_y=6 on map_id=38. The previous move attempt failed due to a parsing error in the tool call structure (missing JSON blob), not an issue with movement logic itself. I need to retry moving up from the current coordinates to progress toward potential landmarks like the Oak Lab or Pokemart.
+Decision: explore
+
+2026-06-07 03:03:12,548 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:03:12,548 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=117, last=113, required=15)
+2026-06-07 03:03:12,648 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:03:12,648 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:03:23,519 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:23,521 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=118, last=113, required=15)
+2026-06-07 03:03:29,381 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:29,384 | ERROR | agent.planner | No JSON found in LLM output. Raw response: I moved up from player_x=3, player_y=6. The observation shows "up" as the result of my move_up tool call. I need to continue exploring the map to find Pokémon Gyms and Gym Leaders for badges. My current position is at player_x=3, player_y=6 on map_id=38.
+2026-06-07 03:03:29,384 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:03:29,384 | WARNING | emulator.controls | InputManager: left blocked by cooldown (frame=118, last=112, required=15)
+2026-06-07 03:03:29,484 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:03:29,485 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:03:31,959 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:31,960 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=119, last=113, required=15)
+2026-06-07 03:03:37,756 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:40,554 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:40,556 | WARNING | emulator.controls | InputManager: up blocked by cooldown (frame=119, last=113, required=15)
+2026-06-07 03:03:51,146 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:03:51,149 | ERROR | agent.planner | JSON parse failed for: {
+  "goal": "explore",
+  "analysis": "Current position is at player_x=3, player_y=6 on map_id=38 with no party and no items. The objective is to find Pokémon Gyms for badges. Since the map ID is 38 (likely a large area), I need to move towards known gym locations or explore nearby areas. Based on typical Pokémon Red maps, moving up from y=6 might lead closer to the main town or specific gyms if they are located further north. I will continue moving up to progress toward potential gym locations.",
+  "target_location": {"x": null, "y": 10}
+2026-06-07 03:03:51,149 | INFO | agent.phase_manager | OVERWORLD ACTION: explore
+2026-06-07 03:03:51,149 | WARNING | emulator.controls | InputManager: right blocked by cooldown (frame=119, last=113, required=15)
+2026-06-07 03:03:51,249 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:03:51,249 | INFO | agent.phase_manager | [RAM] map=26  pos=(3,6)  battle=0  party=0
+2026-06-07 03:03:51,249 | INFO | agent.overworld_agent | OverworldAgent planning...
+2026-06-07 03:03:51,250 | WARNING | agent.overworld_agent | Loop detected in overworld
+2026-06-07 03:04:02,794 | INFO | httpx | HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-07 03:04:02,806 | INFO | emulator.pyboy_manager | Loaded state: saves/state_0.state

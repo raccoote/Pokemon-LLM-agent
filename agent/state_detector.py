@@ -29,9 +29,9 @@ class StateDetector:
             joy_ign     = gs["joy_ignore"]
             d730        = gs["wd730"]
             party_size  = gs["party_size"]
-            cf91        = mem[ADDR_CF91]
-            cc29        = mem[ADDR_CC29]
-            d36d        = mem[0xD36D]
+            cf91        = mem[self.manager.memory.get_addr("engine.cf91")]
+            cc29        = mem[self.manager.memory.get_addr("engine.cc29")]
+            d36d        = mem[self.manager.memory.get_addr("engine.d36d")]
             script_lock = (d730 & 0b00000010) != 0
 
             # 1. TITLE
@@ -84,21 +84,21 @@ class StateDetector:
 
     def _textbox_active(self, mem) -> bool:
         try:
-            return mem[ADDR_TEXTBOX_ID] != 0
+            return mem[self.manager.memory.get_addr("ui.textbox_id")] != 0
         except Exception:
             return False
 
     def _joy_locked(self, mem) -> bool:
         try:
-            return mem[ADDR_JOY_IGNORE] != 0
+            return mem[self.manager.memory.get_addr("ui.joy_ignore")] != 0
         except Exception:
             return False
 
     def _player_has_control(self, mem) -> bool:
         try:
-            textbox     = mem[ADDR_TEXTBOX_ID]
-            joy_ign     = mem[ADDR_JOY_IGNORE]
-            d730        = mem[ADDR_WD730]
+            textbox     = mem[self.manager.memory.get_addr("ui.textbox_id")]
+            joy_ign     = mem[self.manager.memory.get_addr("ui.joy_ignore")]
+            d730        = mem[self.manager.memory.get_addr("engine.wd730")]
             script_lock = (d730 & 0b00000010) != 0
             return textbox == 0 and joy_ign == 0 and not script_lock
         except Exception:
@@ -109,7 +109,7 @@ class StateDetector:
             mem = self.manager.pyboy.memory
         gs = self.manager.memory.get_game_state()
         cf91 = gs.get("cf91", 0)
-        cc29 = mem[0xCC29]
+        cc29 = mem[self.manager.memory.get_addr("engine.cc29")]
         return (
             self._joy_locked(mem) or
             self._textbox_active(mem) or

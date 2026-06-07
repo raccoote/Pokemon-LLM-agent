@@ -58,7 +58,6 @@ def main():
         logger.error(f"Emulator init failed: {e}")
         return
 
-    # Initialize subsystems
     set_manager(manager)
     planner = Planner()
     memory = MemoryStore()
@@ -76,8 +75,6 @@ def main():
     try:
         while True:
             manager.step(1)
-            
-            # Control frame rate
             if config.SPEED >= 1:
                 time.sleep(0.01) # ~60-100 fps
             else:
