@@ -12,7 +12,7 @@ LOG_DIR.mkdir(exist_ok=True)
 
 # Emulator Settings
 HEADLESS = False  # Set to True for faster execution
-SPEED = 0.5         # 0 for max speed, 1 for real-time
+SPEED = 1         # 0 for max speed, 1 for real-time
 SOUND_ENABLED = True
 WINDOW_SCALE = 3
 

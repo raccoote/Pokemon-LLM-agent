@@ -48,48 +48,29 @@ class Planner:
             # load_state
         ]
 
-        # Load system instructions from file
+        # Load system instructions from file (everything is now in here)
         prompt_path = Path(__file__).parent / "system_prompt.txt"
         self.instructions = prompt_path.read_text().strip()
 
-        self.format_rules = """
-CRITICAL OUTPUT FORMAT RULE:
-You MUST output ONLY valid JSON.
-Never output plain text outside the JSON structure.
-
-Required format:
-{
-  "goal": "explore|navigate",
-  "analysis": "detailed reasoning of your visual observation and strategy",
-  "target_location": {"x": int, "y": int} or null
-}
-"""
-
         # ToolCallingAgent does NOT accept system_prompt in constructor for this version
+        # We will continue to prepend it to the run() call to be safe with this version 
+        # but keep it all consolidated in system_prompt.txt
         self.agent = ToolCallingAgent(
             tools=self.tools,
             model=self.model,
-            max_steps=3
+            max_steps=6
         )
 
     def get_next_goal(self, state, phase, history, logic_note):
-        # We include instructions in the prompt because smolagents ToolCallingAgent 
-        # is stateless across .run() calls in this implementation.
+        # Full instructions from system_prompt.txt + dynamic session data
         prompt = f"""
 {self.instructions}
-
-{self.format_rules}
 
 CURRENT SESSION DATA:
 - PHASE: {phase}
 - STATE: {state}
 - HISTORY: {history}
 - LOGIC NOTE: {logic_note}
-
-Task:
-1. Analyze the current state.
-2. Use your tools (up to 3 steps) to perform necessary actions (moving, talking, etc.).
-3. Once finished, provide your final conclusion using the JSON format specified above.
 """
         
         logger.info("=" * 60)
